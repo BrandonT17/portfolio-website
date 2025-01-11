@@ -1,0 +1,92 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+:root {
+  font-family: 'dos_vga', monospace;
+  --primary-color: rgb(0,0,205);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.t-head {
+  position: fixed; 
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  z-index: 1000;
+  max-width: calc(100vw);
+}
+
+#t-load {
+  -webkit-animation: t-flash-blue 0.5s steps(1) infinite;
+  animation: t-flash-blue 0.5s steps(1) infinite;
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+.body {
+    border: 6px double border var(--primary-color);
+}
+
+hr {
+  color: var(--primary-color);
+}
+
+#pfp {
+  max-width: 10%;
+  height: auto;
+  border: 2px solid black;
+}
+
+.t-menu {
+	border: 6px double var(--primary-color);
+	min-height: 3em;
+	background: white;
+	padding: 1em;
+	outline: 4px solid white;
+	margin: 12px 8px;
+	overflow: visible;
+	width: 90%;
+	max-width: calc(100% - 16px);
+	float: left;
+	position: relative;
+}
+
+@media only screen and (min-width: 767px) {
+	.t-menu.three_fifth {
+	width: calc(60% - 16px);
+	}
+	.t-menu.two_fifth {
+	width: calc(40% - 16px);
+	}
+	.t-menu.one_half {
+	width: calc(50% - 16px);
+	}
+	.t-menu.one_third {
+	width: calc(33.33% - 16px);
+	}
+	.t-menu.two_third {
+	width: calc(66.66% - 16px);
+	}
+}
+
+@font-face {
+  font-family: 'dos_vga';
+  src: url('./assets/Perfect DOS VGA 437.ttf') format('truetype');
+}
