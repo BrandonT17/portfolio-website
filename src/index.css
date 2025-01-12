@@ -37,6 +37,24 @@
   float: right;
 }
 
+.randomize-button {
+  background: black;
+  color: white;
+  border: 2px solid currentColor; 
+  outline: 3px solid black;
+  padding: 2px 8px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.randomize-button:hover {
+  background: white;
+  color: black;
+  outline: white;
+}
+
 .highlight {
   color: white;
   background-color: black;
@@ -213,6 +231,18 @@ a {
 
 footer {
   padding: 1em;
+  padding-top: 0px;
   text-align: left;
   color: black;
+  margin: 0;
 }
+
+.footer-box {
+  background-color: var(--primary-color);
+  color: yellow;
+  padding-left: 1em;
+  width: 100%;
+  line-height: 100px;
+  margin-bottom: 0;
+}
+

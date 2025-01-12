@@ -55,6 +55,10 @@ function Body() {
         </div>
       </div>
       <div className="container">
+        <div className="t-menu one_half" aria-label="Blog"></div>
+        <div className="t-menu one_half" aria-label="penis"></div>
+      </div>
+      <div className="container">
         <div className="t-menu" aria-label="portfolio">
           {">"} my stuff...
           <ul>
