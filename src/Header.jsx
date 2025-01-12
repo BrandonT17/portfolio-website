@@ -16,7 +16,7 @@ function Header() {
   const [buttonText, setButtonText] = useState("Ciao.");
   const [isClicked, setIsClicked] = useState(false);
   // theme button
-  const [themeText, setThemeText] = useState("Light");
+  const [themeText, setThemeText] = useState("Light 光");
   const [currTheme, setTheme] = useState(false);
 
   const handleClick = () => {
@@ -28,7 +28,7 @@ function Header() {
   const toggleTheme = () => {
     console.log("theme button clicked.");
     setTheme(!currTheme);
-    setThemeText(currTheme ? "Light" : "Dark");
+    setThemeText(currTheme ? "Light 光" : "Dark 闇");
   };
 
   return (

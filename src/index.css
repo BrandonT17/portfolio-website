@@ -47,6 +47,7 @@
   text-transform: uppercase;
   font-size: 1em;
   font-family: inherit;
+  display: block;
 }
 
 .randomize-button:hover {
@@ -229,6 +230,15 @@ a {
   src: url("./assets/Perfect DOS VGA 437.ttf") format("truetype");
 }
 
+.binary-message {
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 15px;
+  line-height: 21px;
+  color: yellow;
+}
+
 footer {
   padding: 1em;
   padding-top: 0px;
@@ -238,11 +248,14 @@ footer {
 }
 
 .footer-box {
+  position: relative;
   background-color: var(--primary-color);
   color: yellow;
-  padding-left: 1em;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  overflow: hidden;
   width: 100%;
-  line-height: 100px;
   margin-bottom: 0;
 }
 

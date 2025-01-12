@@ -56,7 +56,7 @@ function Body() {
       </div>
       <div className="container">
         <div className="t-menu one_half" aria-label="Blog"></div>
-        <div className="t-menu one_half" aria-label="penis"></div>
+        <div className="t-menu one_half" aria-label="ASCII of the Day"></div>
       </div>
       <div className="container">
         <div className="t-menu" aria-label="portfolio">
