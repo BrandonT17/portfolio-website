@@ -28,15 +28,18 @@
 .hello-button {
   all: unset;
   background-color: var(--primary-color);
-  padding: 1px 5px;
+  padding: 0px 5px;
   border-radius: 0px;
   font-family: inherit;
+  -webkit-animation: t-flash-blue 0.5s steps(1) infinite;
+	animation: t-flash-blue 0.5s steps(1) infinite;
 }
 
 .hello-button:hover {
   background-color: yellow;
   color:black;
   border-color: var(--primary-color);
+  animation: none;
 }
 
 .highlight {
