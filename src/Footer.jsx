@@ -1,10 +1,12 @@
-
 function Footer() {
-  return(
+  return (
     <footer>
-      <p>Copyright {new Date().getFullYear()} Brandon Thach // Inspired by Terry Davis's Temple OS</p>
+      <p>
+        Copyright {new Date().getFullYear()} Brandon Thach // Inspired by Terry
+        Davis's Temple OS
+      </p>
     </footer>
   );
 }
 
-export default Footer
+export default Footer;

@@ -1,4 +1,4 @@
-import pfp from "./assets/IMG_5730.jpg";
+import dk from "./assets/donkeykong.png";
 import resume from "./assets/Resume (PDF).pdf";
 
 function Body() {
@@ -6,18 +6,25 @@ function Body() {
     <main>
       <div className="container">
         <div className="t-menu three_fifth" aria-label="About me">
-          {">"} who am i...
-          <p>
-            My name is <a className="highlight">Brandon Thach</a> and I am an
-            aspiring software developer from Chicago, Illinois. I am currently
-            studying for my BS in Computer Science at the University of Illinois
-            Chicago (UIC).
-          </p>
-          <p>
-            Since I was a child, I had an infatuation with computers and a deep
-            desire to grow in my understanding of technology; thus, I discovered
-            by passion for programming.{" "}
-          </p>
+          <div className="about-me">
+            <div id="aboutmetext">
+              {">"} who am i...
+              <p>
+                My name is <a className="highlight">Brandon Thach</a> and I am
+                an aspiring software developer from Chicago, Illinois. I am
+                currently studying for my BS in Computer Science at the{" "}
+                <strong>University of Illinois Chicago (UIC)</strong>.
+              </p>
+              <p>
+                Since I was a child, I had an infatuation with computers and a
+                deep desire to grow in my understanding of technology; thus, I
+                discovered my passion for programming and software.{" "}
+              </p>
+            </div>
+            <div id="pfp-image">
+              <img src={dk} className="pfp"></img>
+            </div>
+          </div>
         </div>
         <div className="t-menu two_fifth" aria-label="My links">
           {">"} where to find me...
@@ -60,9 +67,26 @@ function Body() {
               GoogleTest FrameWork (C++)
             </li>
             <li>Spoken Languages: English, Spanish, Khmer</li>
+            <li>
+              Notable Courses Taken:
+              <ul>
+                <li>
+                  Discrete Math, Programming Practicum (C/C++), Java Data
+                  Structures (Java), Data Structures & Algorithms (C++), Machine
+                  Organization (C/x86-x64), Systems Programming (C/x86-x64)
+                </li>
+              </ul>
+            </li>
           </ul>
-          <a className="highlight">C++ Encryption/Decryption Cipher </a><br></br>
-          <a className="highlight">Java Student Information System (SIS)</a><br></br>
+          <h1>Projects</h1>
+          <a className="highlight">C++ Encryption/Decryption Cipher </a>
+          <p>
+            Developed a program that decrypts and encrypts text using either the
+            Caesar Caesar or a randomly-generated cipher.{" "}
+          </p>
+          <br></br>
+          <a className="highlight">Java Student Information System (SIS)</a>
+          <br></br>
           <a className="highlight">8 Wonders of the World Blog</a>
         </div>
       </div>

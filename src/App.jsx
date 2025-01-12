@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <div className="border-container">
-      <Header />
-      <Body />
-      <Footer />
+        <Header />
+        <Body />
+        <Footer />
       </div>
     </>
   );

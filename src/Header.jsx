@@ -12,13 +12,23 @@ function getDate() {
 
 function Header() {
   const [currentDate, setCurrentDate] = useState(getDate());
+  // hello button
   const [buttonText, setButtonText] = useState("Ciao.");
   const [isClicked, setIsClicked] = useState(false);
+  // theme button
+  const [themeText, setThemeText] = useState("Light");
+  const [currTheme, setTheme] = useState(false);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
     setButtonText(isClicked ? "Ciao." : "Hello.");
-    console.log('clicked.');
+    console.log("clicked.");
+  };
+
+  const toggleTheme = () => {
+    console.log("theme button clicked.");
+    setTheme(!currTheme);
+    setThemeText(currTheme ? "Light" : "Dark");
   };
 
   return (
@@ -29,6 +39,9 @@ function Header() {
             {buttonText}
           </button>{" "}
           {currentDate}
+          <button className="theme-button" onClick={toggleTheme}>
+            {themeText}
+          </button>
         </p>
       </header>
     </>
