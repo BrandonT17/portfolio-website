@@ -30,8 +30,8 @@ function Footer() {
       </div>
       <footer>
         <p>
-          Copyright {new Date().getFullYear()} Brandon Thach // Inspired by
-          Terry Davis's TempleOS (RIP)
+          Copyright {new Date().getFullYear()} Brandon Thach <a className="comment">// Inspired by
+          Terry Davis's TempleOS (RIP)</a>
         </p>
       </footer>
     </>

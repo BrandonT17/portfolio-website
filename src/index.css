@@ -118,6 +118,15 @@ a {
   color: red;
 }
 
+.comment {
+  color: green;
+}
+
+li li {
+  color: darkorange;
+  font-style: italic;
+}
+
 .about-me {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -133,6 +142,7 @@ a {
   margin-top: 50px;
   margin-left: 10px;
   background-color: white;
+  border: 2px dashed var(--primary-color);
 }
 
 .border-container {
@@ -140,6 +150,7 @@ a {
   margin-top: 10px;
   margin-left: 80px;
   margin-right: 80px;
+  margin-bottom: 10px;
 }
 
 .container {
