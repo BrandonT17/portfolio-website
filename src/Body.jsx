@@ -83,15 +83,48 @@ function Body() {
             </li>
           </ul>
           <h1>Projects</h1>
+          <hr></hr>
+          <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher </a>
           <p>
-            Developed a program that decrypts and encrypts text using either the
-            Caesar Caesar or a randomly-generated cipher.{" "}
+            A program that implements several vector/string manipulation
+            techniques to encrypt, decrypt, and decipher text. The program
+            accepts user input through the console as well as through an
+            input-file (.txt)- this also applies to program output. Notably, a
+            quadgram scoring algorithm is used to determine the accuracy of the
+            decryptions.
           </p>
           <br></br>
           <a className="highlight">Java Student Information System (SIS)</a>
+          <p>
+            My first full-stack development project. Using object-oriented
+            programming concepts, I developed a Student Information System (SIS)
+            from scratch, allowing teachers to create courses, students, and
+            assignments all in a cohesive ecosystem that implements several core
+            functionalities such as grading, generating reports, and
+            adding/removing objects from classes. The next development stage
+            will utilize Java Swing (Java's GUI) to create a fully functional
+            front end and SQL to implement save data operations.
+          </p>
           <br></br>
           <a className="highlight">8 Wonders of the World Blog</a>
+          <p>
+            My first web development project (in-progress). Utilized HTML, CSS, and some
+            JavaScript (plus additional APIs) to create a blog website from
+            scratch. The website includes a fully functional quiz, site
+            navigation, and a "Contact Me" form that allows users to send
+            messages straight to my inbox.
+          </p>
+          <br></br>
+          <a className="highlight">Portfolio Website</a>
+          <p>
+            This website (the one you're looking at right now) was built using
+            the <strong>React.js</strong> web development framework and the{" "}
+            <strong>Vite</strong> build tool. Using the main front-end languages
+            (HTML/CSS/JS), I was able to develop this beautiful website from
+            scratch and learn the "ins n' outs" of React- a quintessential web
+            development skill in today's market.
+          </p>
         </div>
       </div>
     </main>

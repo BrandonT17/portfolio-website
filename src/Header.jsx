@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MouseEvent } from "react";
 
 function getDate() {
@@ -12,6 +12,9 @@ function getDate() {
 
 function Header() {
   const [currentDate, setCurrentDate] = useState(getDate());
+  const [currentTime, setCurrentTime] = useState(
+    new Date().toLocaleTimeString()
+  );
   // hello button
   const [buttonText, setButtonText] = useState("Ciao.");
   const [isClicked, setIsClicked] = useState(false);
@@ -31,6 +34,15 @@ function Header() {
     setThemeText(currTheme ? "Light 光" : "Dark 闇");
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString());
+    }, 1000); // Update every second
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <header className="t-head">
@@ -38,7 +50,7 @@ function Header() {
           <button className="hello-button" onClick={handleClick}>
             {buttonText}
           </button>{" "}
-          {currentDate}
+          {currentDate} {currentTime}
           <button className="theme-button" onClick={toggleTheme}>
             {themeText}
           </button>

@@ -40,7 +40,7 @@
 .randomize-button {
   background: black;
   color: white;
-  border: 2px solid currentColor; 
+  border: 2px solid currentColor;
   outline: 3px solid black;
   padding: 2px 8px;
   width: auto;
@@ -127,15 +127,13 @@ a {
 
 .pfp {
   max-width: 230px;
-  height: auto; 
-  display:flex;
+  height: auto;
+  display: flex;
   float: center;
   margin-top: 50px;
   margin-left: 10px;
   background-color: white;
 }
-
-
 
 .border-container {
   background: white;
@@ -148,7 +146,7 @@ a {
   margin-top: 1px;
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .t-menu {
@@ -234,9 +232,20 @@ a {
   padding: 0;
   margin-bottom: 0;
   padding-bottom: 0;
-  margin-top: 15px;
+  padding-left: 5px;
+  margin-top: 20px;
   line-height: 21px;
   color: yellow;
+}
+
+.binary-message::before {
+  content: ""
+}
+
+.binary-message::after {
+  content: "_";
+  -webkit-animation: t-flash-blue 0.5s steps(1) infinite;
+  animation: t-flash-blue 0.5s steps(1) infinite;
 }
 
 footer {
@@ -252,10 +261,9 @@ footer {
   background-color: var(--primary-color);
   color: yellow;
   padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 50px;
+  padding-top: 25px;
   overflow: hidden;
+  height: 150px;
   width: 100%;
   margin-bottom: 0;
 }
-
