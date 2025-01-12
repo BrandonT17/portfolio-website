@@ -1,5 +1,6 @@
 import dk from "./assets/donkeykong.png";
 import resume from "./assets/Resume (PDF).pdf";
+import Contact from './Contact';
 
 function Body() {
   return (
@@ -27,35 +28,56 @@ function Body() {
           </div>
         </div>
         <div className="t-menu two_fifth" aria-label="My links">
-          {">"} where to find me...
-          <hr></hr>
           Resume:{" "}
           <a href={resume} target="_blank">
-            my_resume.pdf
+            [OPEN PDF]
           </a>
-          <hr></hr>
-          Contact Me:
-          <ul>
-            <li>Email: brandonthach17@gmail.com</li>
-            <li>
-              LinkedIn:{" "}
-              <a
-                href="www.linkedin.com/in/brandon-thach-a64870227"
-                target="_blank"
-              >
-                my_linkedin_page
-              </a>
-            </li>
-          </ul>
-          <hr></hr>
-          My GitHub:{" "}
+          <br></br>
+          LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/brandon-thach-a64870227/"
+            target="_blank"
+          >
+            [OPEN LINK]
+          </a>
+          <br></br>
+          GitHub:{" "}
           <a href="https://github.com/BrandonT17" target="_blank">
-            my_github_page
+            [OPEN LINK]
           </a>
+          <br></br>
+          <hr></hr>
+          <h2 className="highlight">Contact Me</h2>
+          <Contact></Contact>
         </div>
       </div>
       <div className="container">
-        <div className="t-menu one_half" aria-label="Blog"></div>
+        <div
+          className="t-menu one_half"
+          aria-label="Blog"
+          style={{ paddingTop: "5px" }}
+        >
+          <p>
+            <ul className="blog">
+              <li className="blog-entry">
+                01/12 04:19PM [4] -{" "}
+                <a href="https://www.youtube.com" target="_blank">
+                  my_favorite_website
+                </a>
+              </li>
+              <li className="blog-entry">
+                01/12 03:20PM [3] -{" "}
+                <a href="/portfolio-website/public/hello.html" target="_blank">
+                  my_file
+                </a>
+              </li>
+              <li className="blog-entry">
+                01/12 02:11PM [2] - currently learning rust
+              </li>
+              <li className="blog-entry">01/12 01:01PM [1] - eating curry</li>
+            </ul>
+          </p>
+        </div>
         <div className="t-menu one_half" aria-label="ASCII of the Day"></div>
       </div>
       <div className="container">
@@ -72,14 +94,12 @@ function Body() {
             </li>
             <li>Spoken Languages: English, Spanish, Khmer</li>
             <li>
-              Notable Courses Taken:
-              <ul>
-                <li>
-                  Discrete Math, Programming Practicum (C/C++), Java Data
-                  Structures (Java), Data Structures & Algorithms (C++), Machine
-                  Organization (C/x86-x64), Systems Programming (C/x86-x64)
-                </li>
-              </ul>
+              Notable Courses:{" "}
+              <a style={{ color: "rgb(210, 105, 30)" }}>
+                Discrete Math, Programming Practicum (C/C++), Java Data
+                Structures (Java), Data Structures & Algorithms (C++), Machine
+                Organization (C/x86-x64), Systems Programming (C/x86-x64)
+              </a>
             </li>
           </ul>
           <h1>Projects</h1>
@@ -109,9 +129,9 @@ function Body() {
           <br></br>
           <a className="highlight">8 Wonders of the World Blog</a>
           <p>
-            My first web development project (in-progress). Utilized HTML, CSS, and some
-            JavaScript (plus additional APIs) to create a blog website from
-            scratch. The website includes a fully functional quiz, site
+            My first web development project (in-progress). Utilized HTML, CSS,
+            and some JavaScript (plus additional APIs) to create a blog website
+            from scratch. The website includes a fully functional quiz, site
             navigation, and a "Contact Me" form that allows users to send
             messages straight to my inbox.
           </p>

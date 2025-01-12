@@ -30,11 +30,17 @@
 
 .theme-button {
   all: unset;
+  color: yellow;
   background-color: var(--primary-color);
   padding: 0px 10px 0px;
   border-radius: 0px;
   font-family: inherit;
   float: right;
+}
+
+.theme-button:hover {
+  color: white;
+  background-color: black;
 }
 
 .randomize-button {
@@ -54,6 +60,49 @@
   background: white;
   color: black;
   outline: white;
+}
+
+button[type="submit"] {
+  background: black;
+  color: white;
+  border: 2px solid currentColor;
+  outline: 3px solid black;
+  padding: 2px 8px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: inherit;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background: white;
+  color: black;
+  outline: white;
+}
+
+input[type="text"] {
+  border: white;
+  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: 16px;
+  width: 200px;
+}
+input[type="email"] {
+  border: white;
+  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: 16px;
+  width: 200px;
+}
+
+textarea[name="message"] {
+  width: auto;
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .highlight {
@@ -114,6 +163,13 @@ hr {
   color: var(--primary-color);
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 a {
   color: red;
 }
@@ -125,6 +181,23 @@ a {
 li li {
   color: darkorange;
   font-style: italic;
+}
+
+.blog {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li.blog-entry {
+  padding-top: 0;
+  margin-top: 0;
+  list-style: none;
+}
+
+.blog-entry::before {
+  content: "> ";
+  color: var(--primary-color);
 }
 
 .about-me {
