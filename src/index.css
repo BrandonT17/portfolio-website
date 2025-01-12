@@ -14,22 +14,37 @@
 } */
 
 :root {
-  font-family: 'dos_vga', monospace;
-  --primary-color: rgb(0,0,205);
+  font-family: "dos_vga", monospace;
+  --primary-color: rgb(0, 0, 205);
+  background-color: black;
 }
 
 * {
   box-sizing: border-box;
+  font-size: 18px;
+}
+
+.hello-button {
+  all: unset;
+  background-color: var(--primary-color);
+  padding: 1px 5px;
+  border-radius: 0px;
+  font-family: inherit;
+}
+
+.hello-button:hover {
+  background-color: yellow;
+  color:black;
+  border-color: var(--primary-color);
 }
 
 .highlight {
   color: white;
   background-color: black;
-  font-size: 16px;
 }
 
 .highlight::before {
-  content: "--"
+  content: "--";
 }
 
 .highlight::after {
@@ -50,14 +65,15 @@
 }
 
 .t-head {
-  position: fixed; 
+  position: relative;
   top: 0px;
   left: 0;
   width: 100%;
   background-color: var(--primary-color);
   color: white;
   z-index: 1000;
-  
+  line-height: 25px;
+  padding-left: 10px;
   max-width: calc(100vw);
 }
 
@@ -69,7 +85,7 @@
 }
 
 .body {
-    border: 6px double border var(--primary-color);
+  border: 6px double border var(--primary-color);
 }
 
 body {
@@ -90,41 +106,55 @@ a {
   border: 2px solid black;
 }
 
+.border-container {
+  background: white;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.container {
+  margin-top: 1px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
 .t-menu {
-	border: 6px double var(--primary-color);
-	min-height: 3em;
-	background: white;
-	padding: 1em;
-	outline: 4px solid white;
-	margin: 12px 8px;
-	overflow: visible;
-	width: 90%;
-	max-width: calc(100%);
-	float: left;
-	position: relative;
+  border: 6px double var(--primary-color);
+  min-height: 3em;
+  background: white;
+  padding: 1em;
+  outline: 5px solid white;
+  margin: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-width: calc(100%);
+  float: center;
+  position: relative;
 }
 
 @media only screen and (min-width: 767px) {
-	.t-menu.three_fifth {
-	width: calc(60% - 16px);
-	}
-	.t-menu.two_fifth {
-	width: calc(40% - 16px);
-	}
-	.t-menu.one_half {
-	width: calc(50% - 16px);
-	}
-	.t-menu.one_third {
-	width: calc(33.33% - 16px);
-	}
-	.t-menu.two_third {
-	width: calc(66.66% - 16px);
-	}
+  .t-menu.three_fifth {
+    width: calc(60% - 16px);
+  }
+  .t-menu.two_fifth {
+    width: calc(40% - 16px);
+  }
+  .t-menu.one_half {
+    width: calc(50% - 16px);
+  }
+  .t-menu.one_third {
+    width: calc(33.33% - 16px);
+  }
+  .t-menu.two_third {
+    width: calc(66.66% - 16px);
+  }
 }
 
 @font-face {
-  font-family: 'dos_vga';
-  src: url('./assets/Perfect DOS VGA 437.ttf') format('truetype');
+  font-family: "dos_vga";
+  src: url("./assets/Perfect DOS VGA 437.ttf") format("truetype");
 }
 
 footer {
