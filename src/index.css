@@ -17,6 +17,7 @@
   font-family: "dos_vga", monospace;
   --primary-color: rgb(0, 0, 205);
   background-color: black;
+  color: var(--primary-color);
 }
 
 * {
@@ -51,6 +52,10 @@
   content: "--";
 }
 
+.highlight:hover {
+  color: yellow;
+}
+
 .page-wrap {
   content: "";
   width: 100%;
@@ -61,7 +66,7 @@
   left: 0;
   bottom: 0;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 .t-head {
@@ -71,7 +76,7 @@
   width: 100%;
   background-color: var(--primary-color);
   color: white;
-  z-index: 1000;
+  z-index: 9990;
   line-height: 25px;
   padding-left: 10px;
   max-width: calc(100vw);
@@ -84,12 +89,8 @@
   padding-left: 2px;
 }
 
-.body {
-  border: 6px double border var(--primary-color);
-}
-
 body {
-  color: var(--primary-color);
+  border: 6px double border var(--primary-color);
 }
 
 hr {
@@ -116,7 +117,7 @@ a {
 .container {
   margin-top: 1px;
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
@@ -127,11 +128,31 @@ a {
   padding: 1em;
   outline: 5px solid white;
   margin: 15px;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   max-width: calc(100%);
   float: center;
   position: relative;
+  z-index: 1;
+}
+
+.t-menu::before,
+.comment-reply-title {
+	content: attr(aria-label);
+	display: block;
+	overflow: hidden;
+	padding: 2px 1px 0px 2px;
+	line-height: 0.7;
+	position: absolute;
+	opacity: 1;
+	top: -9px;
+	left: 6px;
+	background: mediumblue;
+	background: white;
+	text-transform: uppercase;
+	-webkit-animation: t-flash-blue 0.5s steps(1) infinite;
+	animation: t-flash-blue 0.5s steps(1) infinite;
+  z-index: 10000;
 }
 
 @media only screen and (min-width: 767px) {
@@ -150,6 +171,28 @@ a {
   .t-menu.two_third {
     width: calc(66.66% - 16px);
   }
+}
+
+@keyframes t-flash-blue {
+  0% {
+    color: white;
+    background: var(--primary-color);
+  }
+  50% {
+    color: var(--primary-color);
+    background-color: white;
+  }
+  100% {
+    color: white;
+    background: var(--primary-color);
+  }
+}
+
+#t-load {
+  -webkit-animation: t-flash-blue 0.5s steps(1) infinite;
+  animation: t-flash-blue 0.5s steps(1) infinite;
+  text-transform: uppercase;
+  padding-left: 2px;
 }
 
 @font-face {

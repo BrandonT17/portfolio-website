@@ -5,8 +5,8 @@ function Body() {
   return (
     <main>
       <div className="container">
-        <div className="t-menu three_fifth">
-          {">"} ABOUT ME
+        <div className="t-menu three_fifth" aria-label="About me">
+          {">"} who am i...
           <p>
             My name is <a className="highlight">Brandon Thach</a> and I am an
             aspiring software developer from Chicago, Illinois. I am currently
@@ -19,8 +19,8 @@ function Body() {
             by passion for programming.{" "}
           </p>
         </div>
-        <div className="t-menu two_fifth">
-          {">"} MY LINKS
+        <div className="t-menu two_fifth" aria-label="My links">
+          {">"} where to find me...
           <hr></hr>
           Resume:{" "}
           <a href={resume} target="_blank">
@@ -48,20 +48,20 @@ function Body() {
         </div>
       </div>
       <div className="container">
-      <div className="t-menu">
-        {">"} PORTFOLIO:
-        <ul>
-          <li>
-            Programming Languages: Python, Java, C/C++, HTML, CSS, JavaScript,
-            Rust
-          </li>
-          <li>
-            Technologies: Git, UNIX, React.js, Vim/NeoVim, Java Swing,
-            GoogleTest FrameWork (C++)
-          </li>
-          <li>Spoken Languages: English, Spanish, Khmer</li>
-        </ul>
-      </div>
+        <div className="t-menu" aria-label="portfolio">
+          {">"} my stuff...
+          <ul>
+            <li>
+              Programming Languages: Python, Java, C/C++, HTML, CSS, JavaScript,
+              Rust
+            </li>
+            <li>
+              Technologies: Git, UNIX, React.js, Vim/NeoVim, Java Swing,
+              GoogleTest FrameWork (C++)
+            </li>
+            <li>Spoken Languages: English, Spanish, Khmer</li>
+          </ul>
+        </div>
       </div>
     </main>
   );
