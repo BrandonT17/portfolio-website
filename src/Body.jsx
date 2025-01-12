@@ -61,6 +61,9 @@ function Body() {
             </li>
             <li>Spoken Languages: English, Spanish, Khmer</li>
           </ul>
+          <a className="highlight">C++ Encryption/Decryption Cipher </a><br></br>
+          <a className="highlight">Java Student Information System (SIS)</a><br></br>
+          <a className="highlight">8 Wonders of the World Blog</a>
         </div>
       </div>
     </main>

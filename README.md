@@ -1,8 +1,7 @@
-# React + Vite
+# PORTFOLIO WEBSITE PROJECT (REACT.JS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my first project made using the React.js web-development framework. Inspired by the UI of Terry Davis's (RIP) TempleOS. 
 
-Currently, two official plugins are available:
+[!] Link to website (hosted with GitHub Pages): 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Date started: 01.11.2025
