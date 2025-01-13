@@ -112,7 +112,7 @@ _-'''''-,           ,- '- .
     "Hmmm, to know everything, I must give up everything...",
     "It is on... like Donkey Kong!",
     "Can you pass me a banana, little buddy?",
-    "What's Leonardo DiCaprio go that I don't have?",
+    "What's Leonardo DiCaprio got that I don't have?",
   ];
   const [asciiArt, setAsciiArt] = useState("");
   const [ddQuote, setDdQuote] = useState("");
