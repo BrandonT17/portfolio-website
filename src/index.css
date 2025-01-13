@@ -19,6 +19,7 @@
   font-family: inherit;
   -webkit-animation: t-flash-blue 0.5s steps(1) infinite;
   animation: t-flash-blue 0.5s steps(1) infinite;
+  cursor: pointer;
 }
 
 .hello-button:hover {
@@ -36,6 +37,7 @@
   border-radius: 0px;
   font-family: inherit;
   float: right;
+  cursor: pointer;
 }
 
 .theme-button:hover {
@@ -54,6 +56,7 @@
   font-size: 1em;
   font-family: inherit;
   display: block;
+  cursor: pointer;
 }
 
 .randomize-button:hover {
@@ -79,6 +82,7 @@ button[type="submit"] {
   position: relative;
   margin-top: 0;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .center {
