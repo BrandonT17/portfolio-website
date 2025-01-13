@@ -18,8 +18,11 @@ function Body() {
                 where I'm set to graduate in the fall of 2025.
               </p>
               <p>
-                Ever since I was a child, I've had a strong infatuation with computers and a
-                deep desire to grow in my understanding of their inner workings. From the day I took my first computer science class in high school, I knew this is what I wanted to pursue as my career.{" "}
+                Ever since I was a child, I've had a strong infatuation with
+                computers and a deep desire to grow in my understanding of their
+                inner workings. From the day I took my first computer science
+                class in high school, I knew this is what I wanted to pursue as
+                my career.{" "}
               </p>
             </div>
           </div>
@@ -89,7 +92,27 @@ function Body() {
             </ul>
           </p>
         </div>
-        <div className="t-menu one_half" aria-label="ASCII of the Day"></div>
+        <div className="t-menu one_half" aria-label="ASCII of the Day">
+          <div className="ascii-container">
+            <pre>
+              ⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠈⠉⠙⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿<br></br>
+              ⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⣿⣿⣿⣿⣿<br></br>
+              ⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣦⠀⠀⠀⠈⢻⣿⣿⣿<br></br>
+              ⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣶⣾⣷⣶⣆⠸⣿⣿⡟⠀⠀⠀⠀⠀⠹⣿⣿<br></br>
+              ⣿⠃⠀⠀⠀⠀⠀⠀⣠⣾⣷⡈⠻⠿⠟⠻⠿⢿⣷⣤⣤⣄⠀⠀⠀⠀⠀⠀⠘⣿<br></br>
+              ⡏⠀⠀⠀⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀⠀⠀⠀⢹<br></br>
+              ⠁⠀⠀⢀⣤⣤⡘⢿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡇⠀⠀⠀⠀⠀⠈<br></br>
+              ⠀⠀⠀⣿⣿⣿⡇⢸⣿⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣉⣉⡁⠀⠀⠀⠀⠀⠀<br></br>
+              ⡀⠀⠀⠈⠛⠛⢡⣾⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡇⠀⠀⠀⠀⠀⢀<br></br>
+              ⣇⠀⠀⠀⠀⠀⠀⠻⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⠟⠀⠀⠀⠀⠀⠀⣸<br></br>
+              ⣿⡄⠀⠀⠀⠀⠀⠀⠙⢿⡿⢁⣴⣶⣦⣴⣶⣾⡿⠛⠛⠋⠀⠀⠀⠀⠀⠀⢠⣿<br></br>
+              ⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⠿⢿⡿⠿⠏⢰⣿⣿⣧⠀⠀⠀⠀⠀⣰⣿⣿<br></br>
+              ⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⠟⠀⠀⠀⢀⣼⣿⣿⣿<br></br>
+              ⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿<br></br>
+              ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣀⡀⠀⠀⠀⠀⢀⣀⣠⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿<br></br>
+            </pre>
+          </div>
+        </div>
       </div>
       <div className="container">
         <div className="t-menu" aria-label="portfolio">
@@ -109,13 +132,17 @@ function Body() {
               <a style={{ color: "rgb(210, 105, 30)" }}>
                 Discrete Math, Programming Practicum (C/C++), Java Data
                 Structures (Java), Data Structures & Algorithms (C++), Machine
-                Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems Programming (C/x86-x64), Software Design, Programming Language Design & Implementation, Software Design
+                Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems
+                Programming (C/x86-x64), Software Design, Programming Language
+                Design & Implementation, Software Design
               </a>
             </li>
           </ul>
           <h1>Projects</h1>
           <hr></hr>
-          <p className="comment">(all of these projects are available on my GitHub)</p>
+          <p className="comment">
+            (all of these projects are available on my GitHub)
+          </p>
           <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher </a>
           <p>
@@ -129,21 +156,22 @@ function Body() {
           <br></br>
           <a className="highlight">Java Student Information System (SIS)</a>
           <p>
-            My first full-stack development project (in-progress). Using object-oriented
-            programming concepts, I developed a Student Information System (SIS)
-            from scratch, allowing teachers to create courses, students, and
-            assignments all in a cohesive ecosystem that implements several core
-            functionalities such as grading, generating reports, and
-            adding/removing objects from classes. The next development stage
-            will utilize Java Swing (Java's GUI) to create a fully functional
-            front end and SQL to implement save data operations.
+            My first full-stack development project (in-progress). Using
+            object-oriented programming concepts, I developed a Student
+            Information System (SIS) from scratch, allowing teachers to create
+            courses, students, and assignments all in a cohesive ecosystem that
+            implements several core functionalities such as grading, generating
+            reports, and adding/removing objects from classes. The next
+            development stage will utilize Java Swing (Java's GUI) to create a
+            fully functional front end and SQL to implement save data
+            operations.
           </p>
           <br></br>
-          <a className="highlight">8 Wonders of the World Blog</a> 
+          <a className="highlight">8 Wonders of the World Blog</a>
           <p>
-            My first web development project. Utilized HTML, CSS,
-            and some JavaScript (plus additional APIs) to create a blog website
-            from scratch. The website includes a fully functional quiz, site
+            My first web development project. Utilized HTML, CSS, and some
+            JavaScript (plus additional APIs) to create a blog website from
+            scratch. The website includes a fully functional quiz, site
             navigation, and a "Contact Me" form that allows users to send
             messages straight to my inbox.
           </p>
@@ -159,7 +187,14 @@ function Body() {
           </p>
           <br></br>
           <a className="highlight">Search Engine</a>
-          <p>A query-based search engine that indexes and queries data from user-inputted files. By mapping keywords to references (using several vector, map, string, and file processing techniques), the user is given a list of possible sources as a result of their search token. Wrote tests using the GoogleTest Framework to ensure performance.</p>
+          <p>
+            A query-based search engine that indexes and queries data from
+            user-inputted files. By mapping keywords to references (using
+            several vector, map, string, and file processing techniques), the
+            user is given a list of possible sources as a result of their search
+            token. Wrote tests using the GoogleTest Framework to ensure
+            performance.
+          </p>
         </div>
       </div>
     </main>
