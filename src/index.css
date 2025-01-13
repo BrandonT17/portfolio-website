@@ -175,6 +175,8 @@ form {
   z-index: 9990;
   line-height: 25px;
   padding-left: 10px;
+  padding-top: 0;
+  margin-top: 0;
   max-width: calc(100vw);
 }
 
@@ -250,10 +252,17 @@ li.blog-entry {
 
 .border-container {
   background: white;
-  margin-top: 10px;
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 0;
+  border: 0px;
+  display: box;
+  width: 1250px;
+  margin: auto;
+  justify-content: center;
+  justify-self: center;
+  position: relative;
+
+  /*position: fixed;*/
 }
 
 .container {

@@ -46,7 +46,7 @@ function Header() {
   return (
     <>
       <header className="t-head">
-        <p>
+        
           <button className="hello-button" onClick={handleClick}>
             {buttonText}
           </button>{" "}
@@ -54,7 +54,7 @@ function Header() {
           <button className="theme-button" onClick={toggleTheme}>
             {themeText}
           </button>
-        </p>
+        
       </header>
     </>
   );
