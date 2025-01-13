@@ -266,7 +266,13 @@ li.blog-entry {
   padding-top: 0;
   margin-top: 0px;
   color: black;
-  font-weight:bolder
+  font-weight:900;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+  
 }
 
 .t-menu {
