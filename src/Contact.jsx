@@ -18,7 +18,7 @@ export default function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Response recieved.");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -29,16 +29,16 @@ export default function Contact() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        "*" indicates required fields<br></br>
-        NAME* <input type="text" name="name" required />
+        "<a>*</a>" indicates required fields<br></br>
+        NAME<a>*</a> <input type="text" name="name" autocomplete="off" required />
         <br></br>
-        EMAIL <input type="email" name="email" required />
+        EMAIL <input type="email" name="email" />
         <br></br>
-        MESSAGE*<br></br> <textarea name="message" required></textarea>
+        MESSAGE<a>*</a><br></br> <textarea name="message" required></textarea>
         <br></br>
-        <button type="submit">Submit</button>
+        <a className="center"><button type="submit">Submit</button></a>
       </form>
-      <span>{result}</span>
+      <span style={{color: "red"}}>{result}</span>
     </div>
   );
 }

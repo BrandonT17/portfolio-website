@@ -1,33 +1,44 @@
 import dk from "./assets/donkeykong.png";
 import resume from "./assets/Resume (PDF).pdf";
-import Contact from './Contact';
+import Contact from "./Contact";
 
 function Body() {
   return (
     <main>
       <div className="container">
-        <div className="t-menu three_fifth" aria-label="About me">
+        <div className="t-menu two_fifth" aria-label="About me">
           <div className="about-me">
             <div id="aboutmetext">
               {">"} who am i...
               <p>
-                My name is <a className="highlight">Brandon Thach</a> and I am
-                an aspiring software developer from Chicago, Illinois. I am
-                currently studying for my BS in Computer Science at the{" "}
-                <strong>University of Illinois Chicago (UIC)</strong>.
+                My name is <a className="highlight">Brandon Thach</a> and I'm an
+                aspiring full-stack software developer from Chicago, Illinois. I
+                am currently studying towards my Bachelors in Computer Science
+                at the <strong>University of Illinois Chicago (UIC)</strong>,
+                where I'm set to graduate in the fall of 2025.
               </p>
               <p>
-                Since I was a child, I had an infatuation with computers and a
-                deep desire to grow in my understanding of technology; thus, I
-                discovered my passion for programming and software.{" "}
+                Ever since I was a child, I've had a strong infatuation with computers and a
+                deep desire to grow in my understanding of their inner workings. From the day I took my first computer science class in high school, I knew this is what I wanted to pursue as my career.{" "}
               </p>
-            </div>
-            <div id="pfp-image">
-              <img src={dk} className="pfp"></img>
             </div>
           </div>
         </div>
-        <div className="t-menu two_fifth" aria-label="My links">
+        <div
+          className="t-menu one_third"
+          aria-label="quote of the day"
+          style={{ height: "333px", backgroundColor: "lightgrey" }}
+        >
+          <div id="pfp-image">
+            <img src={dk} className="pfp"></img>
+            <p>
+              "I've never known any problem that couldn't be solved with a
+              little nap."
+            </p>
+            <strong>- Donkey Kong</strong>
+          </div>
+        </div>
+        <div className="t-menu one_third" aria-label="My links">
           Resume:{" "}
           <a href={resume} target="_blank">
             [OPEN PDF]
@@ -98,12 +109,13 @@ function Body() {
               <a style={{ color: "rgb(210, 105, 30)" }}>
                 Discrete Math, Programming Practicum (C/C++), Java Data
                 Structures (Java), Data Structures & Algorithms (C++), Machine
-                Organization (C/x86-x64), Systems Programming (C/x86-x64)
+                Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems Programming (C/x86-x64), Software Design, Programming Language Design & Implementation, Software Design
               </a>
             </li>
           </ul>
           <h1>Projects</h1>
           <hr></hr>
+          <p className="comment">(all of these projects are available on my GitHub)</p>
           <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher </a>
           <p>
@@ -117,7 +129,7 @@ function Body() {
           <br></br>
           <a className="highlight">Java Student Information System (SIS)</a>
           <p>
-            My first full-stack development project. Using object-oriented
+            My first full-stack development project (in-progress). Using object-oriented
             programming concepts, I developed a Student Information System (SIS)
             from scratch, allowing teachers to create courses, students, and
             assignments all in a cohesive ecosystem that implements several core
@@ -127,9 +139,9 @@ function Body() {
             front end and SQL to implement save data operations.
           </p>
           <br></br>
-          <a className="highlight">8 Wonders of the World Blog</a>
+          <a className="highlight">8 Wonders of the World Blog</a> 
           <p>
-            My first web development project (in-progress). Utilized HTML, CSS,
+            My first web development project. Utilized HTML, CSS,
             and some JavaScript (plus additional APIs) to create a blog website
             from scratch. The website includes a fully functional quiz, site
             navigation, and a "Contact Me" form that allows users to send
@@ -145,6 +157,9 @@ function Body() {
             scratch and learn the "ins n' outs" of React- a quintessential web
             development skill in today's market.
           </p>
+          <br></br>
+          <a className="highlight">Search Engine</a>
+          <p>A query-based search engine that indexes and queries data from user-inputted files. By mapping keywords to references (using several vector, map, string, and file processing techniques), the user is given a list of possible sources as a result of their search token. Wrote tests using the GoogleTest Framework to ensure performance.</p>
         </div>
       </div>
     </main>
