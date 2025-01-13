@@ -22,7 +22,7 @@ function Body() {
   ⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⠟⠀⠀⠀⢀⣼⣿⣿⣿
   ⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿
   ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣀⡀⠀⠀⠀⠀⢀⣀⣠⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿`,
-`
+    `
               $$ $$$$$ $$
               $$ $$$$$ $$
              .$$ $$$$$ $$.
@@ -39,7 +39,7 @@ function Body() {
 $$$$$$$$$'       $$$$$       '$$$$$$$$$
 $$$$$Y'          $$$$$          'Y$$$$$`,
 
-String.raw`
+    String.raw`
 _-'''''-,           ,- '- .
 .'   .- - |          | - -.  '.
 /.'  /                     '.   \\
@@ -58,7 +58,7 @@ _-'''''-,           ,- '- .
               ''/''/''
                 '/'/'
                   ';`,
-`
+    `
             @@@%%%%%%%%%@@          
         @@@%%%%%%%%%#######%@@     
       @@@@%%%%%%%######?######%@   
@@ -77,7 +77,7 @@ _-'''''-,           ,- '- .
   %##?++?+++;+ ??% @%%@@@@          
   @_:?_:+_:_:#%`,
 
-String.raw`
+    String.raw`
 ( The best cure for insomnia is to get a )
 ( lot of sleep. -W.C. Fields             )
  ---------------------------------------- 
@@ -86,7 +86,7 @@ String.raw`
             (__)\       )\/\
                 ||----w |
                 ||     ||`,
-`
+    `
                  ▟█▙
                 ▟███▙
                ▟█████▙
@@ -201,11 +201,23 @@ String.raw`
                 01/12 02:11PM [2] - currently learning rust
               </li>
               <li className="blog-entry">01/12 01:01PM [1] - eating curry</li>
+              <li className="blog-entry">
+                01/01/0001 0:00AM [9999] - Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum
+              </li>
             </ul>
           </p>
         </div>
         <div className="t-menu one_half" aria-label="ASCII of the Day">
-          <div className="ascii-container"><pre>{asciiArt}</pre></div>
+          <div className="ascii-container">
+            <pre>{asciiArt}</pre>
+          </div>
         </div>
       </div>
       <div className="container">

@@ -265,7 +265,7 @@ li.blog-entry {
   justify-content: center;
   padding-top: 0;
   margin-top: 0px;
-  color: black;
+  color: var(--primary-color);
   font-weight:900;
 }
 
