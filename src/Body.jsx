@@ -261,7 +261,7 @@ _-'''''-,           ,- '- .
             (all of these projects are available on my GitHub)
           </p>
           <br></br>
-          <a className="highlight">C++ Encryption/Decryption Cipher </a>
+          <a className="highlight">C++ Encryption/Decryption Cipher</a>
           <p>
             A program that implements several vector/string manipulation
             techniques to encrypt, decrypt, and decipher text. The program
