@@ -106,13 +106,27 @@ _-'''''-,           ,- '- .
  ▟███▀▘                       ▝▀███▙
 ▟▛▀                               ▀▜▙`,
   ];
-
+  const ddQuoteArray = [
+    "I've never known any problem that couldn't be solved with a little nap.",
+    "Banana slamma.",
+    "Hmmm, to know everything, I must give up everything...",
+    "It is on... like Donkey Kong!",
+    "Can you pass me a banana, little buddy?",
+    "What's Leonardo DiCaprio go that I don't have?",
+  ];
   const [asciiArt, setAsciiArt] = useState("");
+  const [ddQuote, setDdQuote] = useState("");
 
   useEffect(() => {
     const randomArt =
       asciiArtArray[Math.floor(Math.random() * asciiArtArray.length)];
     setAsciiArt(randomArt);
+  }, []);
+
+  useEffect(() => {
+    const randomDdQuote =
+      ddQuoteArray[Math.floor(Math.random() * ddQuoteArray.length)];
+    setDdQuote(randomDdQuote);
   }, []);
 
   return (
@@ -146,10 +160,7 @@ _-'''''-,           ,- '- .
         >
           <div id="pfp-image">
             <img src={dk} className="pfp"></img>
-            <p>
-              "I've never known any problem that couldn't be solved with a
-              little nap."
-            </p>
+            <p>"{ddQuote}"</p>
             <strong>- Donkey Kong</strong>
           </div>
         </div>
