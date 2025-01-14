@@ -105,6 +105,23 @@ _-'''''-,           ,- '- .
   ▟██████▀▀▀              ▀▀██████▙
  ▟███▀▘                       ▝▀███▙
 ▟▛▀                               ▀▜▙`,
+  `
+                 ,xNMM.          
+               .OMMMMo           
+               OMMM0,            
+     .;loddo:' loolloddol;.      
+   cKMMMMMMMMMMNWMMMMMMMMMM0:    
+ .KMMMMMMMMMMMMMMMMMMMMMMMWd.    
+ XMMMMMMMMMMMMMMMMMMMMMMMX.      
+;MMMMMMMMMMMMMMMMMMMMMMMM:       
+:MMMMMMMMMMMMMMMMMMMMMMMM:       
+.MMMMMMMMMMMMMMMMMMMMMMMMX.      
+ kMMMMMMMMMMMMMMMMMMMMMMMMWd.    
+ .XMMMMMMMMMMMMMMMMMMMMMMMMMMk  
+  .XMMMMMMMMMMMMMMMMMMMMMMMMK.   
+    kMMMMMMMMMMMMMMMMMMMMMMd     
+     ;KMMMMMMMWXXWMMMMMMMk.      
+       .cooc,.    .,coo:.`,
   ];
   const ddQuoteArray = [
     "I've never known any problem that couldn't be solved with a little nap.",
@@ -237,9 +254,7 @@ _-'''''-,           ,- '- .
           <div className="ascii-container">
             <pre>{asciiArt}</pre>
           </div>
-          <div className="button-container">
-          <button type="reload" onClick={setNewAscii}>New Quote</button>
-          </div>
+          <button type="reload" onClick={setNewAscii}>New ASCII</button>
         </div>
       </div>
       <div className="container">

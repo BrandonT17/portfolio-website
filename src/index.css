@@ -133,19 +133,19 @@ button[type="submit"]:hover {
 input[type="text"] {
   border: white;
   border-bottom: 1px solid black;
-  font-family: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   width: 200px;
-  opacity: 70%;
+  opacity: 100%;
 }
 
 input[type="email"] {
   border: white;
   border-bottom: 1px solid black;
-  font-family: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   width: 200px;
-  opacity: 70%;
+  opacity: 100%;
 }
 
 textarea[name="message"] {
@@ -154,7 +154,7 @@ textarea[name="message"] {
   margin-top: 5px;
   margin-bottom: 0px;
   display: block;
-  font-family: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   opacity: 70%;
   padding: 1px;
@@ -162,6 +162,7 @@ textarea[name="message"] {
   min-height: 75px;
   border: 1.5px solid black;
   resize: none;
+  opacity: 100%;
 }
 
 form {
@@ -312,11 +313,13 @@ li.blog-entry {
   margin-top: 0px;
   color: var(--primary-color);
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
 pre {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .t-menu {
