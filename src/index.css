@@ -85,6 +85,38 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+button[type="reload"] {
+  all: unset;
+  background: black;
+  color: white;
+  border: 2px solid currentColor;
+  outline: 3px solid black;
+  padding: 2px 8px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: inherit;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 10px;
+}
+
+button[type="reload"]:hover {
+  background: white;
+  color: black;
+  outline: white;
+}
+
+.button-container {
+  float: right;
+  position: relative;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -131,6 +163,7 @@ textarea[name="message"] {
   border: 1.5px solid black;
   resize: none;
 }
+
 form {
   line-height: 25px;
 }
@@ -324,18 +357,23 @@ pre {
   .t-menu.three_fifth {
     width: calc(60% - 16px);
   }
+
   .t-menu.two_fifth {
     width: calc(40% - 16px);
   }
+
   .t-menu.one_half {
     width: calc(50% - 16px);
   }
+
   .t-menu.one_third {
     width: calc(33.33% - 16px);
   }
+
   .t-menu.two_third {
     width: calc(66.66% - 16px);
   }
+
   .t-menu.one_fifth {
     width: calc(20% - 16px);
   }
@@ -346,10 +384,12 @@ pre {
     color: white;
     background: var(--primary-color);
   }
+
   50% {
     color: var(--primary-color);
     background-color: white;
   }
+
   100% {
     color: white;
     background: var(--primary-color);

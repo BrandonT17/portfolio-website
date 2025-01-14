@@ -117,16 +117,24 @@ _-'''''-,           ,- '- .
   const [asciiArt, setAsciiArt] = useState("");
   const [ddQuote, setDdQuote] = useState("");
 
-  useEffect(() => {
+  const setNewQuote = () => {
+     const randomDdQuote =
+      ddQuoteArray[Math.floor(Math.random() * ddQuoteArray.length)];
+    setDdQuote(randomDdQuote);
+  }
+
+  const setNewAscii = () => {
     const randomArt =
       asciiArtArray[Math.floor(Math.random() * asciiArtArray.length)];
     setAsciiArt(randomArt);
+  }
+
+  useEffect(() => {
+    setNewQuote();
   }, []);
 
   useEffect(() => {
-    const randomDdQuote =
-      ddQuoteArray[Math.floor(Math.random() * ddQuoteArray.length)];
-    setDdQuote(randomDdQuote);
+    setNewAscii();
   }, []);
 
   return (
@@ -160,9 +168,9 @@ _-'''''-,           ,- '- .
         >
           <div id="pfp-image">
             <img src={dk} className="pfp"></img>
-            <p>"{ddQuote}"</p>
-            <strong>- Donkey Kong</strong>
+            <p style={{paddingTop: "none"},{marginTop: "4px"}}>"{ddQuote}"</p>
           </div>
+            <button type="reload" onClick={setNewQuote}>New Quote</button>
         </div>
         <div className="t-menu one_third" aria-label="My links">
           Resume:{" "}
@@ -228,6 +236,9 @@ _-'''''-,           ,- '- .
         <div className="t-menu one_half" aria-label="ASCII of the Day">
           <div className="ascii-container">
             <pre>{asciiArt}</pre>
+          </div>
+          <div className="button-container">
+          <button type="reload" onClick={setNewAscii}>New Quote</button>
           </div>
         </div>
       </div>
