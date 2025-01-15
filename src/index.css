@@ -5,6 +5,29 @@
   color: var(--primary-color);
 }
 
+[data-theme='light'] {
+  font-family: "dos_vga", monospace;
+  --primary-color: rgb(0, 0, 205);
+  --background-color: white;
+  --input-border: black;
+  color: var(--primary-color);
+  --footer-color: rgb(0, 0, 205);
+  --link-color: red;
+  --dd-color: lightgrey;
+}
+
+[data-theme='dark'] {
+  font-family: "dos_vga", monospace;
+  --primary-color: #00b330;
+  --background-color: black;
+  --input-border: #00b330;
+  color: var(--primary-color);
+  --footer-color: #008a10;
+  --link-color: blue;
+  --dd-color: black;
+}
+
+
 * {
   box-sizing: border-box;
   margin-bottom: 5px;
@@ -132,25 +155,29 @@ button[type="submit"]:hover {
 
 input[type="text"] {
   border: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--input-border);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   width: 200px;
   opacity: 100%;
+  background-color: var(--background-color);
+  color: var(--primary-color)
 }
 
 input[type="email"] {
   border: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--input-border);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   width: 200px;
   opacity: 100%;
+  background-color: var(--background-color);
+  color: var(--primary-color)
 }
 
 textarea[name="message"] {
   width: auto;
-  background-color: white;
+  background-color: var(--background-color);
   margin-top: 5px;
   margin-bottom: 0px;
   display: block;
@@ -160,9 +187,10 @@ textarea[name="message"] {
   padding: 1px;
   width: 100%;
   min-height: 75px;
-  border: 1.5px solid black;
+  border: 1.5px solid var(--input-border);
   resize: none;
   opacity: 100%;
+  color: var(--primary-color);
 }
 
 form {
@@ -171,7 +199,7 @@ form {
 
 .highlight {
   color: white;
-  background-color: black;
+  background-color: var(--primary-color);
 }
 
 .highlight::before {
@@ -190,7 +218,7 @@ form {
   content: "";
   width: 100%;
   height: 10px;
-  background: #111;
+  background: var(--background-color);
   display: block;
   position: fixed;
   left: 0;
@@ -237,7 +265,7 @@ h2 {
 }
 
 a {
-  color: red;
+  color: var(--link-color);
 }
 
 .comment {
@@ -285,7 +313,7 @@ li.blog-entry {
 }
 
 .border-container {
-  background: white;
+  background: var(--background-color);
   margin-top: 0px;
   padding-top: 0;
   border: 0px;
@@ -325,9 +353,9 @@ pre {
 .t-menu {
   border: 6px double var(--primary-color);
   min-height: 3em;
-  background: white;
+  background: var(--background-color);
   padding: 1em;
-  outline: 5px solid white;
+  outline: 5px solid var(--background-color);
   margin: 15px;
   overflow: visible;
   width: 100%;
@@ -382,19 +410,23 @@ pre {
   }
 }
 
+.dd-background {
+  background-color: var(--dd-color);
+}
+
 @keyframes t-flash-blue {
   0% {
-    color: white;
+    color: var(--background-color);
     background: var(--primary-color);
   }
 
   50% {
     color: var(--primary-color);
-    background-color: white;
+    background-color: var(--background-color);
   }
 
   100% {
-    color: white;
+    color: var(--background-color);
     background: var(--primary-color);
   }
 }
@@ -441,7 +473,7 @@ footer {
 
 .footer-box {
   position: relative;
-  background-color: var(--primary-color);
+  background-color: var(--footer-color);
   color: yellow;
   padding-left: 10px;
   padding-top: 25px;

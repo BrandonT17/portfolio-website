@@ -30,11 +30,19 @@ function Header() {
 
   const toggleTheme = () => {
     console.log("theme button clicked.");
-    setTheme(!currTheme);
-    setThemeText(currTheme ? "Light 光" : "Dark 闇");
+    const newTheme = !currTheme; 
+    setTheme(newTheme);
+    setThemeText(currTheme ? "Dark 闇" : "Light 光");
+    document.documentElement.setAttribute(
+      "data-theme",
+      newTheme ? "dark" : "light"
+    );
   };
 
   useEffect(() => {
+    document.documentElement.setAttribute("data-theme", "light");
+    setTheme(false);
+
     const intervalId = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
     }, 1000); // Update every second
@@ -42,6 +50,7 @@ function Header() {
     // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
+
 
   return (
     <>

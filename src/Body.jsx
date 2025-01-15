@@ -179,9 +179,9 @@ _-'''''-,           ,- '- .
           </div>
         </div>
         <div
-          className="t-menu one_third"
+          className="t-menu one_third dd-background"
           aria-label="quote of the day"
-          style={{ height: "333px", backgroundColor: "lightgrey" }}
+          
         >
           <div id="pfp-image">
             <img src={dk} className="pfp"></img>
