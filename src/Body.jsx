@@ -263,11 +263,11 @@ _-'''''-,           ,- '- .
           <ul>
             <li>
               Programming Languages: Python, Java, C/C++, HTML, CSS, JavaScript,
-              Rust
+              Rust, F#
             </li>
             <li>
-              Technologies: Git, UNIX, React.js, Vim/NeoVim, Java Swing,
-              GoogleTest FrameWork (C++)
+              Technologies: Git, UNIX, React.js, AngularJS, Vim/NeoVim, Java Swing,
+              GoogleTest FrameWork (C++), LINUX, JavaFX
             </li>
             <li>Spoken Languages: English, Spanish, Khmer</li>
             <li>
@@ -277,7 +277,7 @@ _-'''''-,           ,- '- .
                 Structures (Java), Data Structures & Algorithms (C++), Machine
                 Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems
                 Programming (C/x86-x64), Software Design, Programming Language
-                Design & Implementation, Software Design
+                Design & Implementation (Python, F#, Golang) 
               </a>
             </li>
           </ul>
