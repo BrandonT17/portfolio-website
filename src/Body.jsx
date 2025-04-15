@@ -284,8 +284,11 @@ _-'''''-,           ,- '- .
           <h1>Projects</h1>
           <hr></hr>
           <p className="comment">
-            (all of these projects are available on my GitHub)
+            (most of these projects are available on my GitHub)
           </p>
+          <br></br>
+          <a className="highlight">My Intentions Board</a>
+          <p>Created a web application using AngularJS that allows students at the St. John Paul II Newman Center to interact with each other online, posting prayer intentions for one another, with added implementation that allows users to save posts and choose between posting with their name visible or hidden.</p>
           <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher</a>
           <p>
@@ -309,6 +312,11 @@ _-'''''-,           ,- '- .
             fully functional front end and SQL to implement save data
             operations.
           </p>
+          <a className="highlight"><MyBusinessBoard (SparkHacks 2025 hackaton)</a>
+          <p>Built a social-media management app that allows business to keep track of their social media accounts and track analytics and engagement all from one location- using ReactJS for the frontend and GOlang for the backend (to connect to the Instagram and Twitter API).</p>
+          <br></br>
+          <a className="highlight">OK Weather App</a>
+          <p>Developed a JavaFX application to display live weather information using the Nation Weather Service API, allowing users to see daily forecast information and three-day forecast information</p>
           <br></br>
           <a className="highlight">8 Wonders of the World Blog</a>
           <p>
