@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dk from "./assets/donkeykong.png";
-import resume from "./assets/Resume (PDF).pdf";
+import resume from "./assets/Resume.pdf";
 import Contact from "./Contact";
 
 function Body() {
@@ -338,6 +338,7 @@ _-'''''-,           ,- '- .
             token. Wrote tests using the GoogleTest Framework to ensure
             performance.
           </p>
+          
         </div>
       </div>
     </main>
