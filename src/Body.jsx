@@ -105,7 +105,7 @@ _-'''''-,           ,- '- .
   ▟██████▀▀▀              ▀▀██████▙
  ▟███▀▘                       ▝▀███▙
 ▟▛▀                               ▀▜▙`,
-  `
+    `
                  ,xNMM.          
                .OMMMMo           
                OMMM0,            
@@ -135,16 +135,16 @@ _-'''''-,           ,- '- .
   const [ddQuote, setDdQuote] = useState("");
 
   const setNewQuote = () => {
-     const randomDdQuote =
+    const randomDdQuote =
       ddQuoteArray[Math.floor(Math.random() * ddQuoteArray.length)];
     setDdQuote(randomDdQuote);
-  }
+  };
 
   const setNewAscii = () => {
     const randomArt =
       asciiArtArray[Math.floor(Math.random() * asciiArtArray.length)];
     setAsciiArt(randomArt);
-  }
+  };
 
   useEffect(() => {
     setNewQuote();
@@ -181,13 +181,16 @@ _-'''''-,           ,- '- .
         <div
           className="t-menu one_third dd-background"
           aria-label="quote of the day"
-          
         >
           <div id="pfp-image">
             <img src={dk} className="pfp"></img>
-            <p style={{paddingTop: "none"},{marginTop: "4px"}}>"{ddQuote}"</p>
+            <p style={({ paddingTop: "none" }, { marginTop: "4px" })}>
+              "{ddQuote}"
+            </p>
           </div>
-            <button type="reload" onClick={setNewQuote}>New Quote</button>
+          <button type="reload" onClick={setNewQuote}>
+            New Quote
+          </button>
         </div>
         <div className="t-menu one_third" aria-label="My links">
           Resume:{" "}
@@ -254,7 +257,9 @@ _-'''''-,           ,- '- .
           <div className="ascii-container">
             <pre>{asciiArt}</pre>
           </div>
-          <button type="reload" onClick={setNewAscii}>New ASCII</button>
+          <button type="reload" onClick={setNewAscii}>
+            New ASCII
+          </button>
         </div>
       </div>
       <div className="container">
@@ -266,8 +271,8 @@ _-'''''-,           ,- '- .
               Rust, F#
             </li>
             <li>
-              Technologies: Git, UNIX, React.js, AngularJS, Vim/NeoVim, Java Swing,
-              GoogleTest FrameWork (C++), LINUX, JavaFX
+              Technologies: Git, UNIX, React.js, AngularJS, Vim/NeoVim, Java
+              Swing, GoogleTest FrameWork (C++), LINUX, JavaFX
             </li>
             <li>Spoken Languages: English, Spanish, Khmer</li>
             <li>
@@ -277,7 +282,7 @@ _-'''''-,           ,- '- .
                 Structures (Java), Data Structures & Algorithms (C++), Machine
                 Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems
                 Programming (C/x86-x64), Software Design, Programming Language
-                Design & Implementation (Python, F#, Golang) 
+                Design & Implementation (Python, F#, Golang)
               </a>
             </li>
           </ul>
@@ -288,7 +293,13 @@ _-'''''-,           ,- '- .
           </p>
           <br></br>
           <a className="highlight">My Intentions Board</a>
-          <p>Created a web application using AngularJS that allows students at the St. John Paul II Newman Center to interact with each other online, posting prayer intentions for one another, with added implementation that allows users to save posts and choose between posting with their name visible or hidden.</p>
+          <p>
+            Created a web application using AngularJS that allows students at
+            the St. John Paul II Newman Center to interact with each other
+            online, posting prayer intentions for one another, with added
+            implementation that allows users to save posts and choose between
+            posting with their name visible or hidden.
+          </p>
           <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher</a>
           <p>
@@ -312,11 +323,23 @@ _-'''''-,           ,- '- .
             fully functional front end and SQL to implement save data
             operations.
           </p>
-          <a className="highlight"><MyBusinessBoard (SparkHacks 2025 hackaton)</a>
-          <p>Built a social-media management app that allows business to keep track of their social media accounts and track analytics and engagement all from one location- using ReactJS for the frontend and GOlang for the backend (to connect to the Instagram and Twitter API).</p>
+          <a className="highlight">
+            "MyBusinessBoard - SparkHacks 2025 Hackaton"
+          </a>
+          <p>
+            Built a social-media management app that allows business to keep
+            track of their social media accounts and track analytics and
+            engagement all from one location- using ReactJS for the frontend and
+            GOlang for the backend (to connect to the Instagram and Twitter
+            API).
+          </p>
           <br></br>
           <a className="highlight">OK Weather App</a>
-          <p>Developed a JavaFX application to display live weather information using the Nation Weather Service API, allowing users to see daily forecast information and three-day forecast information</p>
+          <p>
+            Developed a JavaFX application to display live weather information
+            using the Nation Weather Service API, allowing users to see daily
+            forecast information and three-day forecast information
+          </p>
           <br></br>
           <a className="highlight">8 Wonders of the World Blog</a>
           <p>
@@ -346,7 +369,6 @@ _-'''''-,           ,- '- .
             token. Wrote tests using the GoogleTest Framework to ensure
             performance.
           </p>
-          
         </div>
       </div>
     </main>
@@ -354,5 +376,3 @@ _-'''''-,           ,- '- .
 }
 
 export default Body;
-
-
