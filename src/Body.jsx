@@ -268,7 +268,7 @@ _-'''''-,           ,- '- .
           <ul>
             <li>
               Programming Languages: Python, Java, C/C++, HTML, CSS, JavaScript,
-              Rust, F#
+              Rust, F#, SQLite, SQL
             </li>
             <li>
               Technologies: Git, UNIX, React.js, AngularJS, Vim/NeoVim, Java
@@ -285,11 +285,27 @@ _-'''''-,           ,- '- .
                 Design & Implementation (Python, F#, Golang)
               </a>
             </li>
+            <li>
+              <a>
+              Experience: Pharmacy Technician, SparkHacks Hackathon 2025, <bold>Secondhand Talent</bold> Web Designer + Graphic Designer
+              </a>
+            </li>          
           </ul>
           <h1>Projects</h1>
           <hr></hr>
           <p className="comment">
-            (most of these projects are available on my GitHub)
+            some of my projects :)
+          </p>
+          <br></br>
+          <a className="highlight">
+            "MyBusinessBoard - SparkHacks 2025 Hackaton"
+          </a>
+          <p>
+            Built a social-media management app that allows business to keep
+            track of their social media accounts and track analytics and
+            engagement all from one location- using ReactJS for the frontend and
+            GOlang for the backend (to connect to the Instagram and Twitter
+            API).
           </p>
           <br></br>
           <a className="highlight">My Intentions Board</a>
@@ -298,7 +314,7 @@ _-'''''-,           ,- '- .
             the St. John Paul II Newman Center to interact with each other
             online, posting prayer intentions for one another, with added
             implementation that allows users to save posts and choose between
-            posting with their name visible or hidden.
+            posting with their name visible or hidden. Firebase was used to implement a quick and easy authorization method for students to sign-in.
           </p>
           <br></br>
           <a className="highlight">C++ Encryption/Decryption Cipher</a>
@@ -322,16 +338,6 @@ _-'''''-,           ,- '- .
             development stage will utilize Java Swing (Java's GUI) to create a
             fully functional front end and SQL to implement save data
             operations.
-          </p>
-          <a className="highlight">
-            "MyBusinessBoard - SparkHacks 2025 Hackaton"
-          </a>
-          <p>
-            Built a social-media management app that allows business to keep
-            track of their social media accounts and track analytics and
-            engagement all from one location- using ReactJS for the frontend and
-            GOlang for the backend (to connect to the Instagram and Twitter
-            API).
           </p>
           <br></br>
           <a className="highlight">OK Weather App</a>
