@@ -225,30 +225,10 @@ _-'''''-,           ,- '- .
           <p>
             <ul className="blog">
               <li className="blog-entry">
-                01/12 04:19PM [4] -{" "}
-                <a href="https://www.youtube.com" target="_blank">
-                  my_favorite_website
-                </a>
+                05/17/25 01:03PM - Finally 21!!! (nothing has changed)
               </li>
               <li className="blog-entry">
-                01/12 03:20PM [3] -{" "}
-                <a href="/portfolio-website/public/hello.html" target="_blank">
-                  my_file
-                </a>
-              </li>
-              <li className="blog-entry">
-                01/12 02:11PM [2] - currently learning rust
-              </li>
-              <li className="blog-entry">01/12 01:01PM [1] - eating curry</li>
-              <li className="blog-entry">
-                01/01/0001 0:00AM [9999] - Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum
+                05/24/25 07:37PM - This summer 2025, I am sharpening my knowledge of data structures and algorithms, seeking to grow deeper in my understanding of Java, C, and Golang. I am also continuing in my journey into the Linux world, experimenting with more linux distrobutions and using them to revive old hardware. I will be taking an advanced algorithms class over the summer, as well as working at the pharmacy and with my university in teaching a software engineering summer camp.
               </li>
             </ul>
           </p>
@@ -268,7 +248,7 @@ _-'''''-,           ,- '- .
           <ul>
             <li>
               Programming Languages: Python, Java, C/C++, HTML, CSS, JavaScript,
-              Rust, F#, SQLite, SQL
+              Rust, F#, SQLite, SQL, Golang
             </li>
             <li>
               Technologies: Git, UNIX, React.js, AngularJS, Vim/NeoVim, Java
@@ -280,14 +260,14 @@ _-'''''-,           ,- '- .
               <a style={{ color: "rgb(210, 105, 30)" }}>
                 Discrete Math, Programming Practicum (C/C++), Java Data
                 Structures (Java), Data Structures & Algorithms (C++), Machine
-                Organization (C/x86-x64), <strong>[IN-PROGRESS]</strong> Systems
+                Organization (C/x86-x64), Systems
                 Programming (C/x86-x64), Software Design, Programming Language
-                Design & Implementation (Python, F#, Golang)
+                Design & Implementation (Python, F#, Golang), <strong>[IN-PROGRESS]</strong> Advanced Algorithms
               </a>
             </li>
             <li>
               <a>
-              Experience: Pharmacy Technician, SparkHacks Hackathon 2025, <bold>Secondhand Talent</bold> Web Designer + Graphic Designer
+              Experience: Pharmacy Technician, SparkHacks Hackathon 2025, <bold>Secondhand Talent</bold> Web Designer + Graphic Designer, <bold>UIC College of Engineering</bold> Undergrad Teaching Assistant
               </a>
             </li>          
           </ul>
