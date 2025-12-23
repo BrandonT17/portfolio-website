@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inconsolata } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
@@ -23,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inconsolata.className} antialiased`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="max-w-4xl mx-auto px-4">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

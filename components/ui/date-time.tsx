@@ -5,12 +5,14 @@ export default function DateTime() {
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setDateTime(new Date());
-    }, 1000);
+    const update = () => setDateTime(new Date());
+    update();
+    const timer = setInterval(update, 1000);
 
     return () => clearInterval(timer);
   }, []);
+
+  if (!dateTime) return null;
 
   // format date and time
   const weekday = dateTime.toLocaleDateString("en-US", { weekday: "short" });
