@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inconsolata.className} antialiased`}>
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
           <Header />
           <main>{children}</main>
           <Footer />

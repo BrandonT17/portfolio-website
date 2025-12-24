@@ -12,7 +12,7 @@ export default function Header() {
     let pageTitle = "/Users/bt";
     return (
         <div className="flex justify-between items-center border-b">
-            <div className="flex gap-2"><Hello /></div>
+            <div className="flex gap-2"><Hello /> <DateTime /> </div>
             <div><CurrPath/></div>
             <ThemeBtn />
         </div>
