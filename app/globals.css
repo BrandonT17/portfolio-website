@@ -11,3 +11,22 @@
     --foreground: #ededed;
   }
 }
+
+.boxx {
+  position: relative;
+  margin: 12px 8px;
+  padding: 20px;
+  border: 5px double black;
+}
+
+.boxx::before {
+  content: attr(aria-label);
+  position: absolute;
+  top: -10px;
+  left: 6px;
+  background: white;
+  color: black;
+  padding: 2px 1px 0px 2px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}

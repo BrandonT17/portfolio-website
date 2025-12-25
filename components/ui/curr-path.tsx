@@ -1,10 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function CurrPath() {
   const pathname = usePathname();
+  const router = useRouter();
 
   let pageTitle = "/Users/bt";
   if (pathname === "/") {
@@ -17,5 +17,9 @@ export default function CurrPath() {
     pageTitle = "/Users/bt/blog";
   }
 
-  return <div>{pageTitle}</div>;
+  return (
+    <button type="button" onClick={() => router.back()}>
+      {pageTitle}
+    </button>
+  );
 }
