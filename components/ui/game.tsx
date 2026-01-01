@@ -3,74 +3,8 @@
 import { useState, useEffect, useCallback } from "react";
 
 const messages: string[][] = [
+  ["01101000", "01100101", "01101100", "01101100", "01101111"],
   [
-    "01001001",
-    "00100000",
-    "01101100",
-    "01101111",
-    "01110110",
-    "01100101",
-    "00100000",
-    "01110000",
-    "01110010",
-    "01101111",
-    "01100111",
-    "01110010",
-    "01100001",
-    "01101101",
-    "01101101",
-    "01101001",
-    "01101110",
-    "01100111",
-  ],
-  [
-    "01101001",
-    "00100000",
-    "01101100",
-    "01101111",
-    "01110110",
-    "01100101",
-    "00100000",
-    "01101100",
-    "01101001",
-    "01101110",
-    "01110101",
-    "01111000",
-  ],
-  [
-    "01101001",
-    "00100000",
-    "01101100",
-    "01101111",
-    "01110110",
-    "01100101",
-    "00100000",
-    "01100011",
-  ],
-  [
-    "01101001",
-    "00100000",
-    "01101000",
-    "01100001",
-    "01110100",
-    "01100101",
-    "00100000",
-    "01110000",
-    "01111001",
-    "01110100",
-    "01101000",
-    "01101111",
-    "01101110",
-  ],
-  [
-    "01110000",
-    "01101100",
-    "01100101",
-    "01100001",
-    "01110011",
-    "01100101",
-    "00100000",
-    "00100000",
     "01101001",
     "01101110",
     "01110100",
@@ -81,7 +15,11 @@ const messages: string[][] = [
     "01101000",
     "01101001",
     "01110000",
+    "00001010",
   ],
+  ["01101100", "01101001", "01101110", "01110101", "01111000"],
+  ["01100011", "01101111", "01100100", "01100101"],
+  ["01101000", "01100101", "01111000"],
 ];
 
 export default function Footer() {
@@ -99,23 +37,26 @@ export default function Footer() {
   }, [randomMessage]);
 
   return (
-    <>
+    <div>
+      <div>Decode the binary message and enter your answer!</div>
       <div>
-        <button onClick={randomMessage}>Click to generate new message!</button>
-        <div>
-          {currentMessage.map((byte, i) => (
-            <span key={i}>{byte} </span>
-          ))}
-        </div>
-        <div>
-          <input
-            type="text"
-            value={guess}
-            onChange={(e) => setGuess(e.target.value)}
-            placeholder="Enter your guess"
-          />
-        </div>
+        {currentMessage.map((byte, i) => (
+          <span key={i}>{byte} </span>
+        ))}
+        _
       </div>
-    </>
+      <div className="flex flex-col mt-3 gap-3">
+        <input
+          type="text"
+          value={guess}
+          onChange={(e) => setGuess(e.target.value)}
+          placeholder="Enter your guess"
+          className="border p-1"
+        />
+        <button onClick={randomMessage} className="btn">
+          CLICK TO GENERATE NEW MESSAGE
+        </button>
+      </div>
+    </div>
   );
 }

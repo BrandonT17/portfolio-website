@@ -12,15 +12,17 @@ export default function Welcome() {
     // `}
     //     </pre>
     <div>
-      <h1>brandont17@software-developer</h1>
+      <h1>
+        <b>brandont17@software-developer</b>
+      </h1>
       <p>
         -----------------------------
-        <br /> Location: Chicago, USA <br /> Degree: B.S. Computer Science{" "}
+        <br /> <b>Location</b>: Chicago, IL (USA) <br /> <b>Degree</b>: BS in
+        Computer Science <br />
+        <b>Ed</b>: University of Illinois Chicago <br /> <b>Graduation</b>: May
+        2026 <br /> <b>Stack</b>: JavaScript/React/Next/Node
         <br />
-        Ed: University of Illinois Chicago <br /> Graduation: May 2026 <br />{" "}
-        Stack: Typescript/React/Next/Node
-        <br />
-        GitHub: github.com/brandont17
+        <b>GitHub</b>: github.com/brandont17
       </p>
     </div>
   );

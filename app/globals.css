@@ -22,11 +22,62 @@
 .boxx::before {
   content: attr(aria-label);
   position: absolute;
-  top: -10px;
+  top: -9px;
   left: 6px;
+  background-color: white;
+  color: black;
+  padding: 0px 2px 0px 2px;
+  text-transform: uppercase;
+  /* animation: blink 1s steps(1) infinite; */
+  line-height: 14px;
+}
+
+em {
+  background: black;
+  color: white;
+  font-style: normal;
+}
+
+em:hover {
+  color: yellow;
+}
+
+.card {
+  position: relative;
+  margin: 12px 8px;
+  padding: 20px;
+  border: 5px double black;
+  display: grid;
+}
+
+.btn {
+  background: black;
+  border: 2px solid white;
+  outline: 3px solid black;
+  color: white;
+  display: block;
+}
+
+.btn:hover {
   background: white;
   color: black;
-  padding: 2px 1px 0px 2px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
+}
+
+.blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    background: white;
+    color: black;
+  }
+  50% {
+    background: black;
+    color: white;
+  }
+  100% {
+    background: white;
+    color: black;
+  }
 }

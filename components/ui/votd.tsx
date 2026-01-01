@@ -6,7 +6,7 @@ export default async function BibleVerse() {
     const verse = await getRandomVerse();
     return (
       <p>
-        {verse.text} — {verse.book} {verse.reference}
+        "{verse.text}" — {verse.book} {verse.reference}
       </p>
     );
   } catch {

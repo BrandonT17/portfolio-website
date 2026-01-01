@@ -15,11 +15,13 @@ export default async function Page({
 
   return (
     <main className="min-h-[300px]">
-      <article>
-        <h1>{post.frontmatter.title}</h1>
-        <div>
-          {post.frontmatter.date} / {post.frontmatter.author}
-        </div>
+      <article className="mt-5">
+        "{post.frontmatter.title}"
+        <br />
+        {/* author: {post.frontmatter.author}
+        <br /> */}
+        {post.frontmatter.date}
+        <br />
         <div>{post.content}</div>
       </article>
     </main>

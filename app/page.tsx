@@ -2,86 +2,145 @@ import BibleVerse from "@/components/ui/votd";
 import Link from "next/link";
 import Image from "next/image";
 import Welcome from "@/components/ui/welcome";
+import { experiences } from "@/data/experience";
 import Game from "@/components/ui/game";
 
 export default function Home() {
+  const links = [
+    { href: "/about", label: "cd about-me", description: "" },
+    { href: "/portfolio", label: "cd my-portfolio", description: "" },
+    { href: "/blog", label: "cd my-blog", description: "" },
+    {
+      href: "",
+      label: "open RESUME",
+      description: "[!]",
+    },
+    {
+      href: "https://github.com/BrandonT17",
+      label: "open my-github",
+      description: "[!]",
+    },
+  ];
+
   return (
     <main className="flex flex-col">
       {/* TOP SECTION */}
       <section className="flex flex-col md:flex-row">
         <div
-          className="w-full md:w-1/5 flex justify-center boxx relative"
-          aria-label="Welcome"
+          className="w-full md:w-1/3 flex justify-center boxx relative"
+          aria-label="welcome"
         >
-          <Image src="/hi.png" alt="me" fill className=" object-center" />
+          <Image src="/hi.png" alt="me" fill className="object-contain" />
         </div>
 
-        <div className="w-full md:w-2/5 flex justify-center boxx">
+        <div
+          className="w-full md:w-1/3 flex justify-center boxx"
+          aria-label="neofetch"
+        >
           <Welcome />
         </div>
 
-        <div className="w-full md:w-2/5 flex flex-col boxx">
-          <h1>/Users/bt/NAVIGATION/</h1>
-          <Link href="/about">cd my-interests</Link>
-          <Link href="/portfolio">cd my-portfolio</Link>
-          <Link href="/blog">cd my-blog</Link>
+        <div
+          className="w-full md:w-1/3 flex flex-col boxx gap-4 justify-center"
+          aria-label="navigation"
+        >
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="btn px-1 font-bold"
+            >
+              $ {link.label} {link.description}
+            </Link>
+          ))}
         </div>
       </section>
 
       {/* ABOUT & SKILLS */}
       <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-start boxx">
-          <h1>/Users/bt/ABOUT-ME.txt</h1>
+        <div
+          className="w-full md:w-2/5 flex flex-col justify-center items-start boxx"
+          aria-label="bio"
+        >
+          {/* <h1>/Users/bt/ABOUT-ME.txt</h1> */}
           <p>
-            My name is --Brandon Thach-- and I am a software developer from
-            Chicago, Illinois. I'm currently studying for my Bachelors in
-            Computer Science at the University of Illinois, Chicago (UIC), where
-            I am set to graduate Spring 2026.
+            My name is <em>--Brandon Thach--</em> and I am a{" "}
+            <b>full-stack software developer</b> based in{" "}
+            <b>Chicago, Illinois</b>. I am pursuing a Bachelor's degree in
+            Computer Science at the University of Illinois Chicago, where I'm
+            set to graduate in Spring 2026.
           </p>
           <p>
-            I enjoy full-stack web application development, web and network
-            security, and anything Linux-related.
+            I build complete web applications with a strong emphasis on
+            security. I also enjoy experimenting with utility tools and the
+            Linux operating system.
+            <Link href="/about" className="font-bold">
+              {" "}
+              Read More
+            </Link>
           </p>
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-start boxx">
-          <h1>/Users/bt/SKILLS.txt</h1>
-          <ul className="list-disc pl-5">
-            <li>Languages: JavaScript, TypeScript, Python, C/C++, Java</li>
-            <li>
-              Frameworks: Next.js (React), SvelteKit, Node.js, Express, Angular
-            </li>
-            <li>Databases: MongoDB, MySQL, PostgreSQL</li>
-            <li>Tools: Git, Docker, Linux, AWS</li>
-          </ul>
+        <div className="md:w-3/5 flex flex-col boxx" aria-label="skills">
+          <div>
+            <em>GET http://***/skills.txt HTTP/1.1</em>
+          </div>
+          <div>
+            Languages: Python, Java, C/C++, HTML/CSS/Javascript, TypeScript, SQLite
+          </div>
+          <div>
+            Technologies: React, Next.js, JavaFx, Tailwind, Springboot,
+            SvelteKit, Astro, Angular
+          </div>
+          <div>Tools: Git, Firebase, Docker, Linux</div>
+          <div>Databases: SQL, PostgreSQL, Redis, Firestore</div>
         </div>
       </section>
 
       {/* EXPERIENCE & PROJECTS */}
       <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 boxx">
-          <h1>/Users/bt/EXPERIENCE.txt</h1>
-          hello
+        <div className="w-full md:w-1/2 boxx" aria-label="experience">
+          {/* <h1>/Users/bt/EXPERIENCE.txt</h1> */}
+          <ul>
+            {experiences.map((experience) => (
+              <li key={experience.title}>
+                {experience.title} ({experience.date})
+                <br />
+                {experience.role}
+                <br />
+                {experience.description}
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <div className="w-full md:w-1/2 boxx">
-          <h1>/Users/bt/PROJECTS.txt</h1>
-          sdfsd
+        <div className="w-full md:w-1/2 boxx" aria-label="featured projects">
+          {/* <h1>/Users/bt/PROJECTS.txt</h1> */}
+          <Link href="/about" className="font-bold">
+            {" "}
+            Read More
+          </Link>
         </div>
       </section>
 
       {/* VERSE OF THE DAY */}
       <section className="flex flex-col">
-        <div className="flex flex-col justify-center items-start boxx">
-          <h1>/Users/bt/VERSE-OF-THE-DAY.tsx</h1>
+        <div
+          className="flex flex-col justify-center items-start boxx"
+          aria-label="verse of the day"
+        >
+          {/* <h1>/Users/bt/VERSE-OF-THE-DAY.tsx</h1> */}
           <BibleVerse /> {/* credit: bible-api.com */}
         </div>
       </section>
 
       {/* GAME */}
       <section className="flex flex-col">
-        <div className="flex flex-col justify-center items-start boxx">
-          <h1>/Users/bt/GUESS-THE-BINARY.tsx</h1>
+        <div
+          className="flex flex-col justify-center boxx"
+          aria-label="play a game"
+        >
+          {/* <h1>/Users/bt/GUESS-THE-BINARY.tsx</h1> */}
           <Game />
         </div>
       </section>
