@@ -1,10 +1,9 @@
 "use client";
-
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function CurrPath() {
   const pathname = usePathname();
-  const router = useRouter();
 
   let pageTitle = "/Users/bt";
   if (pathname === "/") {
@@ -18,8 +17,8 @@ export default function CurrPath() {
   }
 
   return (
-    <button type="button" onClick={() => router.back()}>
-      {pageTitle}
-    </button>
+    <Link href="/">
+      <button type="button">{pageTitle}</button>
+    </Link>
   );
 }

@@ -1,7 +1,7 @@
 export type Project = {
   name: string;
   description: string;
-  url: string;
+  url: string | null;
   topics: string[];
 };
 

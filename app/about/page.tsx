@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div className="flex flex-col justify-center md:flex-row">
-      <div className="boxx w-2/3">
+      <div className="boxx w-2/3" aria-label="About Me">
         From a very young age, I had a strong interest in engineering,
         particularly the problem-solving aspect and how finding the optimal
         solution to a problem can totally change the way someone interacts with

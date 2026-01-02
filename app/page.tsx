@@ -4,6 +4,8 @@ import Image from "next/image";
 import Welcome from "@/components/ui/welcome";
 import { experiences } from "@/data/experience";
 import Game from "@/components/ui/game";
+import Experience from "@/components/ui/experience";
+import Featured from "@/components/ui/featured";
 
 export default function Home() {
   const links = [
@@ -74,7 +76,7 @@ export default function Home() {
             I build complete web applications with a strong emphasis on
             security. I also enjoy experimenting with utility tools and the
             Linux operating system.
-            <Link href="/about" className="font-bold">
+            <Link href="/portfolio" className="font-bold">
               {" "}
               Read More
             </Link>
@@ -83,17 +85,15 @@ export default function Home() {
 
         <div className="md:w-3/5 flex flex-col boxx" aria-label="skills">
           <div>
-            <em>GET http://***/skills.txt HTTP/1.1</em>
-          </div>
-          <div>
-            Languages: Python, Java, C/C++, HTML/CSS/Javascript, TypeScript, SQLite
+            Languages: Python, Java, C/C++, HTML/CSS/Javascript, TypeScript,
+            SQLite
           </div>
           <div>
             Technologies: React, Next.js, JavaFx, Tailwind, Springboot,
             SvelteKit, Astro, Angular
           </div>
           <div>Tools: Git, Firebase, Docker, Linux</div>
-          <div>Databases: SQL, PostgreSQL, Redis, Firestore</div>
+          <div>Databases: SQL, PostgreSQL, Neon, Redis, Firestore</div>
         </div>
       </section>
 
@@ -101,21 +101,12 @@ export default function Home() {
       <section className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 boxx" aria-label="experience">
           {/* <h1>/Users/bt/EXPERIENCE.txt</h1> */}
-          <ul>
-            {experiences.map((experience) => (
-              <li key={experience.title}>
-                {experience.title} ({experience.date})
-                <br />
-                {experience.role}
-                <br />
-                {experience.description}
-              </li>
-            ))}
-          </ul>
+          <Experience />
         </div>
 
         <div className="w-full md:w-1/2 boxx" aria-label="featured projects">
           {/* <h1>/Users/bt/PROJECTS.txt</h1> */}
+          <Featured />
           <Link href="/about" className="font-bold">
             {" "}
             Read More
@@ -137,7 +128,7 @@ export default function Home() {
       {/* GAME */}
       <section className="flex flex-col">
         <div
-          className="flex flex-col justify-center boxx"
+          className="flex flex-col justify-center boxx p-0"
           aria-label="play a game"
         >
           {/* <h1>/Users/bt/GUESS-THE-BINARY.tsx</h1> */}
