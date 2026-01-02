@@ -11,14 +11,28 @@ export default function Header() {
 
   let pageTitle = "/Users/bt";
   return (
-    <div className="flex justify-between items-center border-b">
-      <div className="flex gap-2">
-        <Hello /> <DateTime />{" "}
+    <div className="relative border-b py-0.25">
+      <div className="flex flex-col items-center gap-1 sm:flex-row sm:items-center">
+        {/* Left */}
+        <div className="flex gap-2 sm:order-1 sm:items-center justify-center sm:justify-start w-full sm:w-auto">
+          <span className="hover:bg-black hover:text-white">
+            <Hello />
+          </span>
+          <DateTime />
+        </div>
+
+        {/* Center */}
+        <div className="sm:absolute sm:left-1/2 sm:-translate-x-1/2 text-center">
+          <span className="hover:bg-black hover:text-white"><CurrPath /></span>
+        </div>
+
+        {/* Right */}
+        <div className="sm:ml-auto sm:order-3 flex justify-center sm:justify-end w-full sm:w-auto">
+          <span className="hover:bg-black hover:text-white" >
+            <ThemeBtn />
+          </span>
+        </div>
       </div>
-      <div>
-        <CurrPath />
-      </div>
-      <ThemeBtn />
     </div>
   );
 }

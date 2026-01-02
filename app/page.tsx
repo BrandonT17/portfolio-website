@@ -6,15 +6,16 @@ import { experiences } from "@/data/experience";
 import Game from "@/components/ui/game";
 import Experience from "@/components/ui/experience";
 import Featured from "@/components/ui/featured";
+import Skills from "@/components/ui/skills";
 
 export default function Home() {
   const links = [
     { href: "/about", label: "cd about-me", description: "" },
-    { href: "/portfolio", label: "cd my-portfolio", description: "" },
+    { href: "/projects", label: "cd my-projects", description: "" },
     { href: "/blog", label: "cd my-blog", description: "" },
     {
       href: "",
-      label: "open RESUME",
+      label: "open RESUME.pdf",
       description: "[!]",
     },
     {
@@ -29,21 +30,21 @@ export default function Home() {
       {/* TOP SECTION */}
       <section className="flex flex-col md:flex-row">
         <div
-          className="w-full md:w-1/3 flex justify-center boxx relative"
+          className="w-auto md:w-1/3 flex justify-center boxx relative"
           aria-label="welcome"
         >
           <Image src="/hi.png" alt="me" fill className="object-contain" />
         </div>
 
         <div
-          className="w-full md:w-1/3 flex justify-center boxx"
+          className="w-auto md:w-1/3 flex justify-center boxx"
           aria-label="neofetch"
         >
           <Welcome />
         </div>
 
         <div
-          className="w-full md:w-1/3 flex flex-col boxx gap-4 justify-center"
+          className="w-auto md:w-1/3 flex flex-col boxx gap-4 justify-center"
           aria-label="navigation"
         >
           {links.map((link) => (
@@ -52,7 +53,7 @@ export default function Home() {
               href={link.href}
               className="btn px-1 font-bold"
             >
-              $ {link.label} {link.description}
+              $ {link.label} <span className="blink">{link.description}</span>
             </Link>
           ))}
         </div>
@@ -61,10 +62,9 @@ export default function Home() {
       {/* ABOUT & SKILLS */}
       <section className="flex flex-col md:flex-row">
         <div
-          className="w-full md:w-2/5 flex flex-col justify-center items-start boxx"
+          className="w-auto md:w-2/5 flex flex-col items-start boxx"
           aria-label="bio"
         >
-          {/* <h1>/Users/bt/ABOUT-ME.txt</h1> */}
           <p>
             My name is <em>--Brandon Thach--</em> and I am a{" "}
             <b>full-stack software developer</b> based in{" "}
@@ -76,40 +76,31 @@ export default function Home() {
             I build complete web applications with a strong emphasis on
             security. I also enjoy experimenting with utility tools and the
             Linux operating system.
-            <Link href="/portfolio" className="font-bold">
+            <Link href="/about" className="font-bold">
               {" "}
-              Read More
+              [Read More]
             </Link>
           </p>
         </div>
 
         <div className="md:w-3/5 flex flex-col boxx" aria-label="skills">
-          <div>
-            Languages: Python, Java, C/C++, HTML/CSS/Javascript, TypeScript,
-            SQLite
-          </div>
-          <div>
-            Technologies: React, Next.js, JavaFx, Tailwind, Springboot,
-            SvelteKit, Astro, Angular
-          </div>
-          <div>Tools: Git, Firebase, Docker, Linux</div>
-          <div>Databases: SQL, PostgreSQL, Neon, Redis, Firestore</div>
+          <Skills />
         </div>
       </section>
 
       {/* EXPERIENCE & PROJECTS */}
       <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 boxx" aria-label="experience">
+        <div className="w-auto md:w-1/2 boxx" aria-label="experience">
           {/* <h1>/Users/bt/EXPERIENCE.txt</h1> */}
           <Experience />
         </div>
 
-        <div className="w-full md:w-1/2 boxx" aria-label="featured projects">
+        <div className="w-auto md:w-1/2 boxx" aria-label="featured projects">
           {/* <h1>/Users/bt/PROJECTS.txt</h1> */}
           <Featured />
-          <Link href="/about" className="font-bold">
+          <Link href="/projects" className="font-bold">
             {" "}
-            Read More
+            [Read More]
           </Link>
         </div>
       </section>
@@ -128,10 +119,9 @@ export default function Home() {
       {/* GAME */}
       <section className="flex flex-col">
         <div
-          className="flex flex-col justify-center boxx p-0"
+          className="flex flex-col justify-center boxx p-0 w-auto"
           aria-label="play a game"
         >
-          {/* <h1>/Users/bt/GUESS-THE-BINARY.tsx</h1> */}
           <Game />
         </div>
       </section>

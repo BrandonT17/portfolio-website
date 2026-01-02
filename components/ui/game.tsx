@@ -107,7 +107,7 @@ export default function Footer() {
       <div>
         <span className="text-blue-300">#</span> Binary Decoder Challenge
         <br />
-        <span className="text-blue-300">#</span> Decode the binary message to
+        <span className="text-blue-300">#</span> Decode the binary message using
         ASCII and ENTER your answer!
         <br /> <span className="text-blue-300">#</span> Type '
         <span className="font-bold">new</span>' to generate a new message!
