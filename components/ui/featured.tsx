@@ -10,7 +10,7 @@ export default function Featured() {
               <h1 className="font-bold italic"># "{proj.name}"</h1>
               {proj.topics.map((topic) => (
                 <span key={topic} className="italic opacity-75 text-sm">
-                  {topic},
+                  {topic},{" "}
                 </span>
               ))}
               <p>{proj.description}</p>

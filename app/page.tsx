@@ -125,6 +125,9 @@ export default function Home() {
           <Game />
         </div>
       </section>
+      <section>
+        {/* CONTACT ME FORM */}
+      </section>
     </main>
   );
 }
