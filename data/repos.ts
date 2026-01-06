@@ -1,8 +1,8 @@
 import { Project } from "@/lib/github";
 
-// FOR HOMEPAGE USE ONLY
+// FOR PROJECTS PAGE
 
-export const featured: Project[] = [
+export const repos: Project[] = [
   {
     name: "Codexus: Secure Conferencing App",
     description:
@@ -16,13 +16,16 @@ export const featured: Project[] = [
       "SvelteKit",
       "JavaScript",
     ],
+    collaborators: [""],
+    image: ["/codexus-logo.png"],
   },
   {
     name: "Intention",
     description:
       "A community sharing platform built in Angular for UIC's Newman Center.",
     url: "",
-    topics: ["TypeScript", "Angular", "Web Development", "Firebase"],
+    topics: ["TypeScript", "Angular", "Web Development", "Firebase", "OAuth"],
+    image: ["/jpii-logo.png"],
   },
   {
     name: "MyBusinessBoard",
@@ -30,6 +33,7 @@ export const featured: Project[] = [
       "A React app to help businesses manage their social media analytics, integrating Instagram and Twitter APIs with Go backend for live updates.",
     url: "",
     topics: ["React", "JavaScript", "Go", "Analytics", "Web Development"],
+    image: ["/sparkhacks-logo.svg"],
   },
   {
     name: "SyncNode",
@@ -44,5 +48,20 @@ export const featured: Project[] = [
       "Microservices",
       "TCP",
     ],
+    image: ["/syncnode-logo.png"],
+  },
+  {
+    name: "Portfolio Website",
+    description: "",
+    url: "",
+    topics: ["Next.js", "Vercel", "Resend", "TypeScript", "Tailwind CSS", "React"],
+    image: ["/nextlogo.png"],
+  },
+  {
+    name: "OK Weather Forecast",
+    description: "",
+    url: "",
+    topics: ["JavaFX", "Maven", "Java", "NWS API", "Tailwind CSS"],
+    image: [],
   },
 ];

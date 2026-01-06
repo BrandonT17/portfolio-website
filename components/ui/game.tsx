@@ -103,12 +103,12 @@ export default function Footer() {
   );
 
   return (
-    <div className="bg-black text-white p-3 font-mono border-6 border-double flex flex-col gap-3">
+    <div className="bg-black text-white p-3 font-mono border-6 border-double flex flex-col gap-5 h-90">
       <div>
-        <span className="text-blue-300">#</span> Binary Decoder Challenge
+        <span className="text-blue-300">#</span> BINARY DECODER CHALLENGE
         <br />
-        <span className="text-blue-300">#</span> Decode the binary message using
-        ASCII and ENTER your answer!
+        <span className="text-blue-300">#</span> Convert the binary to ASCII and
+        ENTER your answer!
         <br /> <span className="text-blue-300">#</span> Type '
         <span className="font-bold">new</span>' to generate a new message!
       </div>
@@ -134,7 +134,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <div>
+      <div className="position-bottom">
         <span className="text-lime-400">guest@bt</span>:
         <span className="text-blue-300">~$</span>{" "}
         <input

@@ -7,6 +7,7 @@ import Game from "@/components/ui/game";
 import Experience from "@/components/ui/experience";
 import Featured from "@/components/ui/featured";
 import Skills from "@/components/ui/skills";
+import ContactForm from "@/components/ui/contact-form";
 
 export default function Home() {
   const links = [
@@ -14,7 +15,7 @@ export default function Home() {
     { href: "/projects", label: "cd my-projects", description: "" },
     { href: "/blog", label: "cd my-blog", description: "" },
     {
-      href: "",
+      href: "/resume.pdf",
       label: "open RESUME.pdf",
       description: "[!]",
     },
@@ -30,7 +31,7 @@ export default function Home() {
       {/* TOP SECTION */}
       <section className="flex flex-col md:flex-row">
         <div
-          className="w-auto md:w-1/3 flex justify-center boxx relative"
+          className="w-auto md:w-1/3 min-h-[150px] flex justify-center boxx relative"
           aria-label="welcome"
         >
           <Image src="/hi.png" alt="me" fill className="object-contain" />
@@ -105,28 +106,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VERSE OF THE DAY */}
-      <section className="flex flex-col">
-        <div
-          className="flex flex-col justify-center items-start boxx"
-          aria-label="verse of the day"
-        >
-          {/* <h1>/Users/bt/VERSE-OF-THE-DAY.tsx</h1> */}
-          <BibleVerse /> {/* credit: bible-api.com */}
+      <section>
+        <div className="boxx" aria-label="verse of the day">
+          <BibleVerse />
         </div>
       </section>
-
-      {/* GAME */}
-      <section className="flex flex-col">
+      <section className="flex flex-col md:flex-row">
+        {/* CONTACT ME FORM */}
+        <div className="boxx md:w-2/5 w-auto" aria-label="send me a message">
+          <ContactForm />
+        </div>
         <div
-          className="flex flex-col justify-center boxx p-0 w-auto"
+          className="flex flex-col boxx md:w-3/5 w-auto align-middle gap-2"
           aria-label="play a game"
         >
           <Game />
+          <Link
+            href="/ascii-chart.pdf"
+            className="text-red-500 text-center font-bold uppercase"
+          >
+            [binary-to-ascii-chart.pdf]
+          </Link>
         </div>
-      </section>
-      <section>
-        {/* CONTACT ME FORM */}
       </section>
     </main>
   );

@@ -3,6 +3,8 @@ export type Project = {
   description: string;
   url: string;
   topics: string[];
+  image?: string[];
+  collaborators?: string[];
 };
 
 export async function getProjects(

@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${inconsolata.className} antialiased`}>
         <div className="max-w-6xl mx-auto px-2">
           <Header />
-          <main>{children}</main>
+          <main className="py-2">{children}</main>
           <Footer />
         </div>
       </body>
