@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const themes = ["Light 光", "Dark 闇", "Andrea 愛"];
+const themes = ["Light 光", "TempleOS 寺", "Andrea 愛"];
 
 export default function ThemeBtn() {
   const [currentThemeIndex, setCurrentThemeIndex] = useState(0);

@@ -15,7 +15,7 @@ export default function Header() {
       <div className="flex flex-col items-center gap-1 sm:flex-row sm:items-center">
         {/* Left */}
         <div className="flex gap-2 sm:order-1 sm:items-center justify-center sm:justify-start w-full sm:w-auto">
-          <span className="hover:bg-black hover:text-white">
+          <span className="link">
             <Hello />
           </span>
           <DateTime />
@@ -23,12 +23,14 @@ export default function Header() {
 
         {/* Center */}
         <div className="sm:absolute sm:left-1/2 sm:-translate-x-1/2 text-center">
-          <span className="hover:bg-black hover:text-white"><CurrPath /></span>
+          <span className="link">
+            <CurrPath />
+          </span>
         </div>
 
         {/* Right */}
         <div className="sm:ml-auto sm:order-3 flex justify-center sm:justify-end w-full sm:w-auto">
-          <span className="hover:bg-black hover:text-white" >
+          <span className="link">
             <ThemeBtn />
           </span>
         </div>

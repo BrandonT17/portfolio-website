@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p>{description}</p>
         <p className="flex flex-wrap gap-2 text-sm md:justify-start justify-center pt-2">
           {topics.map((topic) => (
-            <span key={topic} className="border-3 border-double px-1">
+            <span key={topic} className="border-4 border-double px-1 hover:bg-black hover:text-white text-sm">
               {topic}
             </span>
           ))}
