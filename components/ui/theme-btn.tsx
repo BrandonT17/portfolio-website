@@ -1,20 +1,28 @@
 "use client";
-import { useState } from "react";
 
-const themes = ["Light 光", "TempleOS 寺", "Andrea 愛"];
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "./theme-context";
+
+const themes = [
+  { key: "light", label: "Light 光" },
+  { key: "templeos", label: "TempleOS 寺" },
+  { key: "andrea", label: "Andrea 愛" },
+];
 
 export default function ThemeBtn() {
-  const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
+  const { theme, setTheme } = useContext(ThemeContext);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const currentIndex = themes.findIndex((t) => t.key === theme);
+    setIndex(currentIndex >= 0 ? currentIndex : 0);
+  }, [theme]);
 
   const handleThemeChange = () => {
-    const nextIndex = (currentThemeIndex + 1) % themes.length;
-    setCurrentThemeIndex(nextIndex);
-    // Here you would also add logic to actually change the theme of the app
+    const next = (index + 1) % themes.length;
+    setIndex(next);
+    setTheme(themes[next].key as "light" | "templeos" | "andrea");
   };
 
-  return (
-    <button onClick={handleThemeChange} className="">
-      {themes[currentThemeIndex]}
-    </button>
-  );
+  return <button onClick={handleThemeChange}>{themes[index].label}</button>;
 }

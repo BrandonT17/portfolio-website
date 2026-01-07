@@ -4,7 +4,7 @@ import { Inconsolata } from "next/font/google";
 import { VT323 } from "next/font/google";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/ui/theme-context";
 
 export const inconsolata = Inconsolata({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inconsolata.className} antialiased`}>
-        <ThemeProvider attribute="class">
+        <ThemeProvider>
           <div className="max-w-6xl mx-auto px-2">
             <Header />
             <main className="py-2">{children}</main>

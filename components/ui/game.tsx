@@ -103,13 +103,13 @@ export default function Footer() {
   );
 
   return (
-    <div className="bg-black text-white p-3 font-mono border-6 border-double flex flex-col gap-5 h-90">
+    <div className="bg-black text-white p-3 font-mono boxx flex flex-col gap-5 h-90">
       <div>
-        <span className="text-blue-300">#</span> BINARY DECODER CHALLENGE
+        <em>#</em> BINARY DECODER CHALLENGE
         <br />
-        <span className="text-blue-300">#</span> Convert the binary to ASCII and
+        <em>#</em> Convert the binary to ASCII and
         ENTER your answer!
-        <br /> <span className="text-blue-300">#</span> Type '
+        <br /> <em>#</em> Type '
         <span className="font-bold">new</span>' to generate a new message!
       </div>
       <div>
@@ -118,7 +118,7 @@ export default function Footer() {
           <>
             <span className="">$ cat stats.txt</span>
             <br />
-            <span className="text-orange-300">
+            <span className="text-red-500 font-bold">
               Score: {score}/{attempts} ({Math.round((score / attempts) * 100)}
               %)
             </span>
@@ -135,8 +135,8 @@ export default function Footer() {
       </div>
 
       <div className="position-bottom">
-        <span className="text-lime-400">guest@bt</span>:
-        <span className="text-blue-300">~$</span>{" "}
+        <span className="text-lime-500 font-bold">guest@bt</span>:
+        <span className="text-blue-500 font-bold">~$</span>{" "}
         <input
           type="text"
           value={guess}

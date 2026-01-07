@@ -77,10 +77,12 @@ export default function Home() {
             I build complete web applications with a strong emphasis on
             security. I also enjoy experimenting with utility tools and the
             Linux operating system.
-            <Link href="/about" className="font-bold">
-              {" "}
-              [Read More]
-            </Link>
+            <span>
+              <Link href="/about" className="link">
+                {" "}
+                [Read More]
+              </Link>
+            </span>
           </p>
         </div>
 
@@ -99,7 +101,7 @@ export default function Home() {
         <div className="w-auto md:w-1/2 boxx" aria-label="featured projects">
           {/* <h1>/Users/bt/PROJECTS.txt</h1> */}
           <Featured />
-          <Link href="/projects" className="font-bold">
+          <Link href="/projects" className="link">
             {" "}
             [Read More]
           </Link>
@@ -121,12 +123,11 @@ export default function Home() {
           aria-label="play a game"
         >
           <Game />
-          <Link
-            href="/ascii-chart.pdf"
-            className="text-red-500 text-center font-bold uppercase"
-          >
-            [binary-to-ascii-chart.pdf]
-          </Link>
+          <span className="text-center">
+            <Link href="/ascii-chart.pdf" className="link uppercase">
+              [binary-to-ascii-chart.pdf]
+            </Link>
+          </span>
         </div>
       </section>
     </main>
