@@ -145,7 +145,6 @@ export default function Footer() {
           placeholder="type answer or 'new'"
           className="bg-black text-white border-none outline-none font-mono"
           maxLength={32}
-          autoFocus
         />
         {/* {result && (
           <span
