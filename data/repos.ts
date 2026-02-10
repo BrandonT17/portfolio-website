@@ -51,10 +51,25 @@ export const repos: Project[] = [
     image: ["/syncnode-logo.png"],
   },
   {
+    name: "Qupa - AI Fashion",
+    description:
+      "An AI-powered search tool that lets users shop for products across the web tailored to their fashion needs with styling suggestions and recommendations.",
+    url: "",
+    topics: ["Next.js, Gemini API, SerpAPI, Clerk Auth, TypeScript, Supabase"],
+    image: [],
+  },
+  {
     name: "Portfolio Website",
     description: "",
     url: "",
-    topics: ["Next.js", "Vercel", "Resend", "TypeScript", "Tailwind CSS", "React"],
+    topics: [
+      "Next.js",
+      "Vercel",
+      "Resend",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+    ],
     image: ["/nextlogo.png"],
   },
   {
