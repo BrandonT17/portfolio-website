@@ -17,7 +17,7 @@ export const vt323 = VT323({
 });
 
 export const metadata: Metadata = {
-  title: "Brandon's Website",
+  title: "Brandon Thach",
   description:
     "Software developer portfolio featuring web development and systems projects.",
 };

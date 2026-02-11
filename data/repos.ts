@@ -27,14 +27,7 @@ export const repos: Project[] = [
     topics: ["TypeScript", "Angular", "Web Development", "Firebase", "OAuth"],
     image: ["/jpii-logo.png"],
   },
-  {
-    name: "MyBusinessBoard",
-    description:
-      "A React app to help businesses manage their social media analytics, integrating Instagram and Twitter APIs with Go backend for live updates.",
-    url: "",
-    topics: ["React", "JavaScript", "Go", "Analytics", "Web Development"],
-    image: ["/sparkhacks-logo.svg"],
-  },
+
   {
     name: "SyncNode",
     description:
@@ -67,7 +60,7 @@ export const repos: Project[] = [
   },
   {
     name: "Portfolio Website",
-    description: "",
+    description: "My personal portfolio website built with Next.js.",
     url: "",
     topics: [
       "Next.js",
@@ -80,8 +73,17 @@ export const repos: Project[] = [
     image: ["/nextlogo.png"],
   },
   {
+    name: "MyBusinessBoard",
+    description:
+      "A React app to help businesses manage their social media analytics, integrating Instagram and Twitter APIs with Go backend for live updates.",
+    url: "",
+    topics: ["React", "JavaScript", "Go", "Analytics", "Web Development"],
+    image: ["/sparkhacks-logo.svg"],
+  },
+  {
     name: "OK Weather Forecast",
-    description: "",
+    description:
+      "A simple JavaFZ application that uses the National Weather Service API to display weather information in a clean, user-friendly UI.",
     url: "",
     topics: ["JavaFX", "Maven", "Java", "NWS API", "Tailwind CSS"],
     image: [],

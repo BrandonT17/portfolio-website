@@ -10,21 +10,22 @@ export const skills: Skill[] = [
   },
   {
     type: "Frontend",
-    skills: ["React", "Next.js", "SvelteKit", "Tailwind", "Astro"],
+    skills: ["React", "Next.js", "Tailwind", "SvelteKit", "Astro"],
   },
   {
     type: "Backend & Data",
     skills: [
-      "Spring Boot",
-      "REST APIs",
-      "Redis",
+      "Node",
+      "Express",
       "PostgreSQL",
+      "Spring Boot",
       "SQLite",
       "Firestore",
+      "Neon",
     ],
   },
   {
     type: "Tools",
-    skills: ["Git", "Docker", "Linux", "Firebase", "Vercel"],
+    skills: ["Git", "Docker", "Linux", "Firebase", "Vercel", "IntelliJ"],
   },
 ];

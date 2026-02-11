@@ -25,12 +25,21 @@ export const featured: Project[] = [
     topics: ["TypeScript", "Angular", "Web Development", "Firebase"],
   },
   {
-    name: "MyBusinessBoard",
+    name: "Qupa - AI Fashion",
     description:
-      "A React app to help businesses manage their social media analytics, integrating Instagram and Twitter APIs with Go backend for live updates.",
+      "An AI-powered search tool that lets users shop for products across the web tailored to their fashion needs with styling suggestions and recommendations.",
     url: "",
-    topics: ["React", "JavaScript", "Go", "Analytics", "Web Development"],
+    topics: [
+      "Next.js",
+      "Gemini API",
+      "SerpAPI",
+      "Clerk Auth",
+      "TypeScript",
+      "Supabase",
+    ],
+    image: ["/qupa.png"],
   },
+
   {
     name: "SyncNode",
     description:
