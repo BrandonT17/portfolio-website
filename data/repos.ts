@@ -63,7 +63,7 @@ export const repos: Project[] = [
       "TypeScript",
       "Supabase",
     ],
-    image: [],
+    image: ["/qupa.png"],
   },
   {
     name: "Portfolio Website",
