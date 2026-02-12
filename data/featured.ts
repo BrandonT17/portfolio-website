@@ -1,7 +1,5 @@
 import { Project } from "@/lib/github";
 
-// FOR HOMEPAGE USE ONLY
-
 export const featured: Project[] = [
   {
     name: "Codexus: Secure Conferencing App",

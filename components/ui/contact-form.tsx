@@ -89,7 +89,7 @@ export default function ContactForm() {
             id="name"
             type="text"
             {...register("name")}
-            className="w-full border-b border-gray-400"
+            className="w-full border-b"
             placeholder="Your name"
           />
           {errors.name && (
@@ -105,7 +105,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             {...register("email")}
-            className="w-full border-b border-gray-400"
+            className="w-full border-b"
             placeholder="your.email@example.com"
           />
           {errors.email && (
@@ -121,7 +121,7 @@ export default function ContactForm() {
             id="subject"
             type="text"
             {...register("subject")}
-            className="w-full border-b border-gray-400"
+            className="w-full border-b"
             placeholder="What's this about?"
           />
           {errors.subject && (
@@ -140,7 +140,7 @@ export default function ContactForm() {
             {...register("message")}
             rows={5}
             maxLength={200}
-            className="w-full border border-gray-400 resize-none min-h-[50px]"
+            className="w-full border resize-none min-h-[50px]"
             placeholder="Your message..."
           />
           {errors.message && (
