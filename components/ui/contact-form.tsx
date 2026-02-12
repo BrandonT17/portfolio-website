@@ -140,7 +140,7 @@ export default function ContactForm() {
             {...register("message")}
             rows={5}
             maxLength={200}
-            className="w-full border resize-none min-h-[50px]"
+            className="w-full border-6 border-double resize-none min-h-[50px]"
             placeholder="Your message..."
           />
           {errors.message && (

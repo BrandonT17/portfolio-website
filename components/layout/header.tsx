@@ -1,6 +1,7 @@
 "use client";
 import ThemeBtn from "@/components/ui/theme-btn";
 import CurrPath from "@/components/ui/curr-path";
+import DateTime from "@/components/ui/date-time";
 import Hello from "@/components/ui/hello";
 import Link from "next/link";
 
@@ -25,7 +26,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="link flex w-full justify-center">
+      <div className="link flex justify-center">
         <CurrPath />
       </div>
 
