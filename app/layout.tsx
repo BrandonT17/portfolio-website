@@ -1,20 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inconsolata } from "next/font/google";
-import { VT323 } from "next/font/google";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/ui/theme-context";
-
-export const inconsolata = Inconsolata({
-  subsets: ["latin"],
-  variable: "--font-inconsolata",
-  display: "swap",
-});
-
-export const vt323 = VT323({
-  weight: "400",
-});
+import { inconsolata } from "@/lib/fonts";
+import { templeos } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Brandon Thach",

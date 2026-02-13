@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BibleVerse from "@/components/ui/votd";
 
 export default function Page() {
   return (

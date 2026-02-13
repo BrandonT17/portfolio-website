@@ -7,10 +7,10 @@ export default function Experience() {
       <ul>
         {experience.map((x) => (
           <li key={x.title} className="mb-3">
-            <h1 className="font-bold italic">
-             # {x.title} ({x.date})
+            <h1 className="font-bold">
+              {">"} {x.title} ({x.date})
             </h1>
-            <p className="italic opacity-50">## {x.role}</p>
+            <p className="italic opacity-50">{x.role}</p>
             <p>{x.description}</p>
           </li>
         ))}

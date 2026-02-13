@@ -1,8 +1,6 @@
 "use client";
 import ThemeBtn from "@/components/ui/theme-btn";
 import CurrPath from "@/components/ui/curr-path";
-import DateTime from "@/components/ui/date-time";
-import Hello from "@/components/ui/hello";
 import Link from "next/link";
 
 export default function Header() {
@@ -14,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-full border-b py-0.75 bg-[var(--header-bg)] text-[var(--header-text)] flex flex-row justify-center">
+    <div className="w-full border-b py-0.75 px-4 bg-[var(--header-bg)] text-[var(--header-text)] flex flex-row justify-center">
       <div className="flex flex-row justify-start w-full gap-4">
         <div className="flex flex-row gap-4 w-full justify-start">
           <h1>猛</h1>

@@ -1,31 +1,27 @@
 export type Skill = {
-  type: "Language" | "Frontend" | "Backend & Data" | "Tools";
+  type: "Language" | "Frontend" | "Backend" | "Database" | "DevOps";
   skills: string[];
 };
 
 export const skills: Skill[] = [
   {
     type: "Language",
-    skills: ["Python", "Java", "JavaScript/TypeScript", "SQL", "C++"],
+    skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "HTML/CSS"],
   },
   {
     type: "Frontend",
     skills: ["React", "Next.js", "Tailwind", "SvelteKit", "Astro"],
   },
   {
-    type: "Backend & Data",
-    skills: [
-      "Node",
-      "Express",
-      "PostgreSQL",
-      "Spring Boot",
-      "SQLite",
-      "Firestore",
-      "Neon",
-    ],
+    type: "Backend",
+    skills: ["Node.js", "Express.js", "Spring Boot"],
   },
   {
-    type: "Tools",
-    skills: ["Git", "Docker", "Linux", "Firebase", "Vercel", "IntelliJ"],
+    type: "Database",
+    skills: ["PostgreSQL", "SQLite", "MySQL", "Firebase", "MongoDB"],
+  },
+  {
+    type: "DevOps",
+    skills: ["Git", "Docker", "Maven", "Vercel"],
   },
 ];

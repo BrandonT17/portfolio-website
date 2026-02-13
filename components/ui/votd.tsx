@@ -5,12 +5,12 @@ export default async function BibleVerse() {
   try {
     const verse = await getRandomVerse();
     return (
-      <p>
-        "{verse.text}"{" "}
-        <span className="font-bold">
-          - {verse.book} {verse.reference}
+      <div className="flex flex-col gap-2">
+        <p>"{verse.text}"</p>
+        <span className="font-bold flex justify-center">
+          {verse.book} {verse.reference}
         </span>
-      </p>
+      </div>
     );
   } catch {
     return <p>Failed to load verse.</p>;

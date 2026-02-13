@@ -27,7 +27,6 @@
 }
 
 [data-theme="templeos"] {
-  font-weight: bolder;
   --bg-color: white;
   --text-color: mediumblue;
   /* --accent-color: #ff0000; */
@@ -44,7 +43,7 @@
 [data-theme="andrea"] {
   --bg-color: black;
   --text-color: white;
-  --accent-color: #00ffff;
+  --accent-color: yellow;
   --link-color: #ff00ff;
   --btn-bg: black;
   --btn-text: red;
@@ -119,10 +118,12 @@ em:hover {
   border: 2px solid white;
   outline: 3px solid black;
   color: var(--btn-text);
-  display: block;
-  /* padding: 0.5rem 1rem; */
+  display: flex;
+  /* padding: 0.2rem 0.2rem; */
   cursor: pointer;
   transition: all 0.2s ease;
+  justify-content: center;
+  align-content: center;
 }
 
 .btn:hover {

@@ -18,7 +18,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="relative border-t py-1">
+    <div className="relative border-t py-0.75 px-4 bg-[var(--header-bg)] text-[var(--header-text)]">
       <div className="flex flex-col items-center sm:flex-row sm:items-center">
         <div className="flex sm:order-1 sm:items-center justify-center sm:justify-start w-full sm:w-auto">
           <p>© Brandon Thach 2026</p>

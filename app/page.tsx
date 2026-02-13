@@ -1,8 +1,6 @@
 import BibleVerse from "@/components/ui/votd";
 import Link from "next/link";
 import Image from "next/image";
-import Welcome from "@/components/ui/welcome";
-import { experiences } from "@/data/experience";
 import Game from "@/components/ui/game";
 import Experience from "@/components/ui/experience";
 import Featured from "@/components/ui/featured";
@@ -11,123 +9,99 @@ import ContactForm from "@/components/ui/contact-form";
 
 export default function Home() {
   const links = [
-    { href: "/about", label: "cd about-me", description: "" },
-    { href: "/projects", label: "cd my-projects", description: "" },
-    { href: "/blog", label: "cd my-blog", description: "" },
-    {
-      href: "/resume.pdf",
-      label: "open RESUME.pdf",
-      description: "[!]",
-    },
-    {
-      href: "https://github.com/BrandonT17",
-      label: "open my-github",
-      description: "[!]",
-    },
+    { href: "https://github.com/BrandonT17", label: "github" },
+    { href: "linkedin.com", label: "linkedin" },
+    { href: "/", label: "resume" },
+    { href: "/about", label: "email" },
   ];
-
   return (
     <main className="flex flex-col">
-      {/* TOP SECTION */}
-      <section className="flex flex-col md:flex-row">
+      <section className="flex flex-col md:flex-row min-h-60">
         <div
           className="w-auto md:w-1/3 min-h-[150px] flex justify-center boxx relative"
-          aria-label="welcome"
+          aria-label="hello"
         >
           <Image src="/hi.png" alt="me" fill className="object-contain" />
         </div>
-
         <div
-          className="w-auto md:w-1/3 flex justify-center boxx"
-          aria-label="neofetch"
+          className="w-auto md:w-1/3 flex flex-col justify-center text-center boxx align-center max-h-45"
+          aria-label="i am..."
         >
-          <Welcome />
+          <div className="my-auto">
+            <h1 className="text-xl font-bold">Brandon Meng Thạch</h1>
+            <h2 className="text-md">Full-Stack Developer</h2>
+            <h3 className="text-sm">Chicago, Illinois</h3>
+            <h4 className="text-sm italic">B.S Computer Science</h4>
+          </div>
         </div>
-
         <div
-          className="w-auto md:w-1/3 flex flex-col boxx gap-4 justify-center"
-          aria-label="navigation"
+          className="w-auto md:w-1/3 md:flex-col boxx flex justify-between md:justify-center gap-4"
+          aria-label="links"
         >
           {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="btn px-1 font-bold"
-            >
-              $ {link.label} <span className="blink">{link.description}</span>
+            <Link key={link.href} href={link.href} className="">
+              $ cd <span className="link underline text-lg">{link.label}</span>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* ABOUT & SKILLS */}
-      <section className="flex flex-col md:flex-row">
+      <section className="flex flex-col sm:flex-row">
         <div
-          className="w-auto md:w-2/5 flex flex-col items-start boxx"
+          className="w-auto md:w-2/5 flex flex-col boxx gap-4"
           aria-label="bio"
         >
           <p>
-            My name is <em>--Brandon Thach--</em> and I am a{" "}
-            <b>full-stack software developer</b> based in{" "}
-            <b>Chicago, Illinois</b>. I am pursuing a Bachelor's degree in
-            Computer Science at the University of Illinois Chicago, where I'm
-            set to graduate in Spring 2026.
+            I'm a full-stack developer focused on building modern web
+            applications with an emphasis on user-friendliness, security and
+            efficiency. Lately, I've been strengthening my backend programming
+            skills, particularly with Node.js and Spring Boot. I'm currently
+            studying for my Bachelor's in Computer Science at the University of
+            Illinois Chicago.
           </p>
-          <p>
-            I build complete web applications with a strong emphasis on
-            security. I also enjoy experimenting with utility tools and the
-            Linux operating system.
-            <span>
-              <Link href="/about" className="link">
-                {" "}
-                [Read More]
-              </Link>
-            </span>
-          </p>
+          <Link
+            href="/about"
+            className="w-25 btn flex justify-right mt-auto uppercase"
+          >
+            Read More
+          </Link>
         </div>
 
-        <div className="md:w-3/5 flex flex-col boxx" aria-label="skills">
+        <div className="md:w-3/5 lg:flex lg:flex-col boxx" aria-label="skills">
           <Skills />
         </div>
       </section>
 
-      {/* EXPERIENCE & PROJECTS */}
       <section className="flex flex-col md:flex-row">
         <div className="w-auto md:w-1/2 boxx" aria-label="experience">
-          {/* <h1>/Users/bt/EXPERIENCE.txt</h1> */}
           <Experience />
         </div>
 
-        <div className="w-auto md:w-1/2 boxx" aria-label="featured projects">
-          {/* <h1>/Users/bt/PROJECTS.txt</h1> */}
+        <div
+          className="w-auto md:w-1/2 boxx flex flex-col items-start gap-4"
+          aria-label="featured projects"
+        >
           <Featured />
-          <Link href="/projects" className="link">
-            {" "}
-            [Read More]
+          <Link href="/projects" className="btn w-25 uppercase mt-auto">
+            Read More
           </Link>
         </div>
       </section>
 
-      <section>
-        <div className="boxx" aria-label="verse of the day">
-          <BibleVerse />
-        </div>
-      </section>
+      {/* <section> */}
+      {/*   <div className="boxx" aria-label="verse of the day"> */}
+      {/*     <BibleVerse /> */}
+      {/*   </div> */}
+      {/* </section> */}
       <section className="flex flex-col md:flex-row">
-        {/* CONTACT ME FORM */}
         <div className="boxx md:w-2/5 w-auto" aria-label="send me a message">
           <ContactForm />
         </div>
         <div
-          className="flex flex-col boxx md:w-3/5 w-auto align-middle gap-2"
-          aria-label="play a game"
+          className="boxx md:w-3/5 w-auto justify-center flex flex-col"
+          aria-label="verse of the day"
         >
-          <Game />
-          <span className="text-center">
-            <Link href="/ascii-chart.pdf" className="link uppercase">
-              [binary-to-ascii-chart.pdf]
-            </Link>
-          </span>
+          <BibleVerse />
         </div>
       </section>
     </main>

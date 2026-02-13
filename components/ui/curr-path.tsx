@@ -9,9 +9,9 @@ export default function CurrPath() {
   if (pathname === "/") {
     pageTitle = "/Users/bt";
   } else if (pathname === "/about") {
-    pageTitle = "/Users/bt/About";
-  } else if (pathname === "/portfolio") {
-    pageTitle = "/Users/bt/portfolio";
+    pageTitle = "/Users/bt/about";
+  } else if (pathname === "/projects") {
+    pageTitle = "/Users/bt/projects";
   } else if (pathname === "/blog") {
     pageTitle = "/Users/bt/blog";
   }
