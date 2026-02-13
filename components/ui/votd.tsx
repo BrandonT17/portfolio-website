@@ -5,7 +5,7 @@ export default async function BibleVerse() {
   try {
     const verse = await getRandomVerse();
     return (
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 text-center">
         <p>"{verse.text}"</p>
         <span className="font-bold flex justify-center">
           {verse.book} {verse.reference}
