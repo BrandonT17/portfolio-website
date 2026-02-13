@@ -60,6 +60,9 @@ body {
   font-family: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: var(--link-color);
   transition: all 0.3s ease;

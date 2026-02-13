@@ -8,7 +8,7 @@ export default function Experience() {
         {experience.map((x) => (
           <li key={x.title} className="mb-3">
             <h1 className="font-bold">
-              {">"} {x.title} ({x.date})
+              {x.title} ({x.date})
             </h1>
             <p className="italic opacity-50">{x.role}</p>
             <p>{x.description}</p>

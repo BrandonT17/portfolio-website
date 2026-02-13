@@ -6,14 +6,7 @@ export const featured: Project[] = [
     description:
       "A peer-to-peer web conferencing app, inspired by the Metal Gear Solid codec call system.",
     url: "https://codexus-fadd6.web.app/",
-    topics: [
-      "WebRTC",
-      "WebSpeechAPI",
-      "Firebase",
-      "Firestore",
-      "SvelteKit",
-      "JavaScript",
-    ],
+    topics: ["WebRTC", "WebSpeechAPI", "Firebase", "SvelteKit"],
   },
   {
     name: "Intention",
@@ -27,14 +20,7 @@ export const featured: Project[] = [
     description:
       "An AI-powered search tool that lets users shop for products across the web tailored to their fashion needs with styling suggestions and recommendations.",
     url: "",
-    topics: [
-      "Next.js",
-      "Gemini API",
-      "SerpAPI",
-      "Clerk Auth",
-      "TypeScript",
-      "Supabase",
-    ],
+    topics: ["Next.js", "Gemini API", "SerpAPI", "Clerk Auth", "Supabase"],
     image: ["/qupa.png"],
   },
 
@@ -43,13 +29,6 @@ export const featured: Project[] = [
     description:
       "A CLI distributed file sync tool that allows users to securely sync and send files peer-to-peer. [IN-PROGRESS]",
     url: "",
-    topics: [
-      "Distributed Systems",
-      "Utility",
-      "TypeScript",
-      "C",
-      "Microservices",
-      "TCP",
-    ],
+    topics: ["Distributed Systems", "TypeScript", "C", "Microservices", "TCP"],
   },
 ];

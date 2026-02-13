@@ -1,7 +1,6 @@
 import BibleVerse from "@/components/ui/votd";
 import Link from "next/link";
 import Image from "next/image";
-import Game from "@/components/ui/game";
 import Experience from "@/components/ui/experience";
 import Featured from "@/components/ui/featured";
 import Skills from "@/components/ui/skills";
@@ -10,9 +9,9 @@ import ContactForm from "@/components/ui/contact-form";
 export default function Home() {
   const links = [
     { href: "https://github.com/BrandonT17", label: "github" },
-    { href: "linkedin.com", label: "linkedin" },
-    { href: "/", label: "resume" },
-    { href: "/about", label: "email" },
+    { href: "www.linkedin.com/in/brandon-thach-a64870227", label: "linkedin" },
+    { href: "/resume.pdf", label: "resume" },
+    { href: "#contact-me", label: "contact-me" },
   ];
   return (
     <main className="flex flex-col">
@@ -40,13 +39,16 @@ export default function Home() {
         >
           {links.map((link) => (
             <Link key={link.href} href={link.href} className="">
-              $ cd <span className="link underline text-lg">{link.label}</span>
+              $ cd{" "}
+              <span className="link underline text-lg font-bold">
+                {link.label}
+              </span>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="flex flex-col sm:flex-row">
+      <section className="flex flex-col md:flex-row">
         <div
           className="w-auto md:w-2/5 flex flex-col boxx gap-4"
           aria-label="bio"
@@ -67,7 +69,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="md:w-3/5 lg:flex lg:flex-col boxx" aria-label="skills">
+        <div className="w-auto md:w-3/5 flex flex-col boxx" aria-label="skills">
           <Skills />
         </div>
       </section>
@@ -94,14 +96,26 @@ export default function Home() {
       {/*   </div> */}
       {/* </section> */}
       <section className="flex flex-col md:flex-row">
-        <div className="boxx md:w-2/5 w-auto" aria-label="send me a message">
+        <div
+          className="boxx md:w-2/5 w-auto"
+          id="contact-me"
+          aria-label="send me a message"
+        >
           <ContactForm />
         </div>
         <div
-          className="boxx md:w-3/5 w-auto justify-center flex flex-col"
+          className="boxx md:w-3/5 w-auto flex flex-col"
           aria-label="verse of the day"
         >
-          <BibleVerse />
+          <div className="mt-auto">
+            <BibleVerse />
+          </div>
+          <Link
+            href="https://www.bible.com/bible/2020/JHN.1.RSV"
+            className="btn w-25 uppercase mt-auto"
+          >
+            Read More
+          </Link>
         </div>
       </section>
     </main>
