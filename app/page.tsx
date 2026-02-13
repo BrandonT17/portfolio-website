@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
         <div
-          className="w-auto md:w-1/2 boxx flex flex-col items-start gap-4"
+          className="w-auto md:w-1/2 boxx flex flex-col items-start gap-4 h-fit"
           aria-label="featured projects"
         >
           <Featured />
